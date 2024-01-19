@@ -1,0 +1,1864 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+}
+header .logo{
+    overflow-y: hidden;
+}
+header .logo img{
+    width: 75px;
+    height: 75px;
+    margin-top: 6px;
+    margin-left: 15px;
+    margin-right: 10px;
+    z-index: 1;
+}
+header .text{
+    margin-top: 10px;
+    z-index: 0;
+}
+header .text h1{
+    color: #fff;
+    font-size: 18px;
+    font-family: Serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+header .text h4{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+header .text h5{
+    margin-right: 80px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+header .text h5 span{
+    display: none;
+}
+
+#background-header-1{
+    width: 100%;
+    height: 58px;
+    background: #006400;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+#background-header-2{
+    width: 80%;
+    height: 25px;
+    background: #004300;
+    position: absolute;
+    top: 58px;
+    z-index: -1;
+    border: #000 solid 0.1px;
+}
+#background-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/Gate.jpg);
+    z-index: -2;
+    position: fixed;
+    top: 0px;
+    background-position: 30% 20%;
+    background-size: cover;
+}
+.login{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    align-items: center;
+    border-radius: 15px;
+    z-index: 2;
+    margin-top: 60px;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 30px;
+}
+.login h1{
+    color: #D9A217;
+    text-align: center;
+    font-size: 24px;
+    font-family: Serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.login h4{
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 120px;
+    margin-bottom: 7px;
+}
+.container-input{
+    display: flex;
+    justify-content: center;
+}
+.input {
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10.5px 30px 10px 35px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+  }
+  
+.input:focus {
+    border-bottom: 1px solid #006400;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+}
+.container-input img{
+    position: absolute;
+    left: 22%;
+    width: 20px;
+    height: 25px;
+    margin-top: 7px;
+}
+
+.container-input #show, #hide{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+.container-input #show{
+    left: 72%;
+    display: none;
+}
+.container-input #hide{
+    left: 72%;
+}
+#button {   
+    color: white;
+    background-color: #006400;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 3px 20px 3px 20px;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+  
+#button:hover {
+    background-color: #004300;
+}
+
+.reminder{
+    display: none;
+}
+.reminder h2{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.reminder #note{
+    position: absolute;
+    color: #D9A217;
+    margin-right: 50%;
+}
+.reminder #details{
+    margin-left: 60px;  
+    margin-right: 10%;
+}
+
+.voted{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.voted #votednote{
+    margin-top: 15px;
+    color: #F61D1D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+.voted .seeresultbtn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    margin: 10px 25px 10px 25px;
+    border-radius: 3%;
+    padding: 5px 5px 5px 5px;
+}
+.voted .seeresultbtn h2{
+    font-size: 14px;
+    font-family: Inter;
+    color:#006400
+}
+.voted .seeresultbtn img{
+    margin-right: 5px;
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+}
+.error404{
+    display: none;
+}
+/* NOTIFICATIONSSSS */
+
+.jconfirm-box-container {
+    margin: 0% 36% 20% 36%;
+}
+.jconfirm-title {
+    pointer-events: none;
+    overflow-y: hidden;
+    padding-bottom: 1px;
+}
+.btn-ok {
+    color: white;
+    background-color: #006400;
+}
+
+@media screen and (max-width: 161px) {
+    header{
+        display: none;
+    }
+    header .text h5{
+        display: none;
+    }
+    #background-header-1{
+        display: none;
+    }
+    #background-header-2{
+        display: none;
+    }
+    #background-image{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .error404{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .error404-Top{
+        margin-left: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error404-Top1{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: -3%;
+    
+    }
+    #txt1{
+        color: #D9A217;
+        font-size: 10px;
+    }
+    #txt2{
+        color: #AA0D0D;
+        font-size: 25px;
+    }
+    #img1{
+        margin-left: -3%;
+        margin-top: 10%;
+        width: 100px;
+    }
+    .error404-Bottom{
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    .txt3{
+        color: #006400;
+        margin: 0px 10px 0px 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .txt4{
+        display: none;
+    }
+}
+@media screen and (max-width: 319px) {
+    header .text h5{
+        font-size: 11px;
+    }
+    #background-image{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .error404{
+        overflow-y: hidden;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .error404-Top{
+        margin-left: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error404-Top1{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: -3%;
+    
+    }
+    #txt1{
+        color: #D9A217;
+        font-size: 10px;
+    }
+    #txt2{
+        color: #AA0D0D;
+        font-size: 25px;
+    }
+    #img1{
+        margin-left: -3%;
+        margin-top: 10%;
+        width: 100px;
+    }
+    .error404-Bottom{
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    .txt3{
+        color: #006400;
+        margin: 0px 10px 0px 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .txt4{
+        display: none;
+    }
+}
+@media (min-width:320px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }  
+    #background-header-1{
+        width: 100%;
+        height: 58px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 25px;
+        background: #004300;
+        position: absolute;
+        top: 58px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }    
+    #background-image{
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/Gate.jpg);
+        z-index: -2;
+        position: fixed;
+        top: 0px;
+        background-position: 36% 20%;
+        background-size: cover;
+    }
+    .login{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        background: rgba(0, 0, 0, 0.65);
+        align-items: center;
+        border-radius: 15px;
+        z-index: 2;
+        margin-top: 35%;
+        margin-left: 13%;
+        margin-right: 13%;
+        margin-bottom: 30px;
+    }
+    .login h1{
+        color: #D9A217;
+        text-align: center;
+        font-size: 34px;
+        font-family: Serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #button{
+        margin-top: 15px;
+    }
+    .reminder{
+        display: flex;
+        justify-content: center;
+    }
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 160px;
+    }
+    .reminder #details{
+        margin-left: 60px;  
+    }
+    .voted{
+        display: none;
+    }
+    .jconfirm-box-container {
+        margin: 0% 6% 15% 6%;
+    }
+}
+@media (min-width: 360px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 10px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 23px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        margin-right: 80px;
+        margin-top: 12px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: none;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 68px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 25px;
+        background: #004300;
+        position: absolute;
+        top: 68px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    .login{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: rgba(0, 0, 0, 0.65);
+        align-items: center;
+        border-radius: 15px;
+        z-index: 2;
+        margin-top: 50%;
+        margin-left: 13%;
+        margin-right: 13%;
+        margin-bottom: 30px;
+    }
+    .login h1{
+        color: #D9A217;
+        text-align: center;
+        font-size: 34px;
+        font-family: Serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #background-image{
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/Gate.jpg);
+        z-index: -2;
+        position: fixed;
+        top: 0px;
+        background-position: 35% 20%;
+        background-size: cover;
+    }
+    .container-input img{
+        position: absolute;
+        left: 25%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 70%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 70%;
+    }
+    #button{
+        margin: 25px 0px 10px 0px;
+    }
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 140px;
+    }
+    .reminder #details{
+        margin-left: 90px;  
+    }
+    
+    .jconfirm-box-container {
+        margin: 0% 6% 15% 6%;
+    }
+}
+
+@media (min-width: 375px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 10px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 23px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        margin-right: 80px;
+        margin-top: 12px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: none;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 68px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 25px;
+        background: #004300;
+        position: absolute;
+        top: 68px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    .container-input img{
+        position: absolute;
+        left: 26%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 69%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 69%;
+    }
+    .login{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: rgba(0, 0, 0, 0.65);
+        align-items: center;
+        border-radius: 15px;
+        z-index: 2;
+        margin-top: 55%;
+        margin-left: 13%;
+        margin-right: 13%;
+        margin-bottom: 30px;
+    }
+    .login h1{
+        color: #D9A217;
+        text-align: center;
+        font-size: 34px;
+        font-family: Serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 140px;
+    }
+    .reminder #details{
+        margin-left: 100px;  
+    }
+    
+    .jconfirm-box-container {
+        margin: 30% 6% 0% 6%;
+    }
+}
+@media (min-width: 390px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 90px;
+        height: 90px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 10px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 26px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        margin-right: 80px;
+        font-size: 18px;
+        margin-top: 15px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: none;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 78px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 25px;
+        background: #004300;
+        position: absolute;
+        top: 78px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 140px;
+    }
+    .reminder #details{
+        margin-left: 110px;  
+    }
+    
+    .jconfirm-box-container {
+        margin: 0% 6% 0% 6%;
+    }
+}
+@media (min-width:410px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 90px;
+        height: 90px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 10px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 26px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        margin-right: 80px;
+        font-size: 18px;
+        margin-top: 15px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: none;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 78px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 25px;
+        background: #004300;
+        position: absolute;
+        top: 78px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    .container-input img{
+        position: absolute;
+        left: 28%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 67%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 67%;
+    }
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 140px;
+    }
+    .reminder #details{
+        margin-left: 110px;  
+    }
+    
+    .jconfirm-box-container {
+        margin: 0% 6% 0% 6%;
+    }
+}
+@media (min-width:449px){
+    .container-input img{
+        position: absolute;
+        left: 30%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 65%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 65%;
+    }
+}
+@media (min-width:489px){
+    .container-input img{
+        position: absolute;
+        left: 31.5%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 64%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 64%;
+    }
+}
+@media (min-width:539px){
+    .container-input img{
+        position: absolute;
+        left: 33%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 63%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 63%;
+    }
+    .jconfirm-box-container {
+        margin: 0% 13% 20% 13%;
+    }
+}
+@media (min-width:580px){
+    .container-input img{
+        position: absolute;
+        left: 34%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 62%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 62%;
+    }
+}
+@media (min-width:620px){
+    .container-input img{
+        position: absolute;
+        left: 35.5%;
+        width: 20px;
+        height: 25px;
+        margin-top: 7px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .container-input #show{
+        left: 61%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 61%;
+    }
+}
+@media (min-width:641px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo img{
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 23px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 29px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        display: flex;
+        margin-right: 80px;
+        margin-top: 18px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: block;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 88px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 35px;
+        background: #004300;
+        position: absolute;
+        top: 88px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    .login{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: rgba(0, 0, 0, 0.65);
+        align-items: center;
+        border-radius: 15px;
+        z-index: 2;
+        margin-top: 40%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 30px;
+    }
+    .login h1{
+        color: #D9A217;
+        text-align: center;
+        font-size: 44px;
+        font-family: Serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .login h4{
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        margin-right: 235px;
+        margin-bottom: 7px;
+    }
+    .container-input{
+        display: flex;
+        justify-content: center;
+    }
+    .input {
+        font-weight: 500;
+        font-size: 24px;
+        height: 60px;
+        width: 350px;
+        border-radius: 10px;
+        padding: 10.5px 30px 10px 55px;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        outline: none;
+      }
+      
+    .input:focus {
+        border-bottom: 1px solid #006400;
+        -webkit-transition: 0.1s;
+        transition: 0.5s;
+    }
+    .container-input img{
+        position: absolute;
+        left: 25%;
+        width: 30px;
+        height: 35px;
+        margin-top: 11px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .container-input #show{
+        left: 69%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 69%;
+    }
+    #button {
+        color: white;
+        background-color: #006400;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        font-size: 20px;
+        line-height: 2rem;
+        padding: 10px 40px 10px 40px;
+        text-align: center;
+        margin-right: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .reminder #note, #details{
+        font-size: 130%;
+    }
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 30%;
+    }
+    .reminder #details{
+        margin-left: 35%;
+        margin-right: 15%;  
+    }
+    .voted{
+        display: none;
+    }
+    
+    .voted .seeresultbtn{
+        margin: 10px 20% 10px 20%;
+    }
+    .jconfirm-box-container {
+        margin: 0% 23% 0% 23%;
+    }
+}
+@media (min-width:692px){
+    .container-input img{
+        position: absolute;
+        left: 27%;
+        width: 30px;
+        height: 35px;
+        margin-top: 11px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .container-input #show{
+        left: 68%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 68%;
+    }
+}
+@media (min-width:754px){
+    .container-input img{
+        position: absolute;
+        left: 29%;
+        width: 30px;
+        height: 35px;
+        margin-top: 11px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .container-input #show{
+        left: 67%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 67%;
+    }
+}
+@media (min-width:820px){
+    .container-input img{
+        position: absolute;
+        left: 31%;
+        width: 30px;
+        height: 35px;
+        margin-top: 11px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .container-input #show{
+        left: 66%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 66%;
+    }
+}
+@media (min-width:910px){
+    .container-input img{
+        position: absolute;
+        left: 33%;
+        width: 30px;
+        height: 35px;
+        margin-top: 11px;
+    }
+    .container-input #show, #hide{
+        cursor: pointer;
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .container-input #show{
+        left: 65%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 65%;
+    }
+}
+@media (min-width:961px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 120px;
+        height: 120px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-right: 23px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 23px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 29px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        display: flex;
+        margin-right: 80px;
+        margin-top: 16px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: block;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 88px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 35px;
+        background: #004300;
+        position: absolute;
+        top: 88px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    .login{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: rgba(0, 0, 0, 0.65);
+        align-items: center;
+        border-radius: 15px;
+        z-index: 2;
+        margin-top: 15%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 30px;
+    }
+    .login h1{
+        color: #D9A217;
+        text-align: center;
+        font-size: 44px;
+        font-family: Serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .login h4{
+        color: #FFF;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 210px;
+        margin-bottom: 7px;
+    }
+    .container-input{
+        display: flex;
+        justify-content: center;
+    }
+    .input {
+        font-weight: 500;
+        font-size: 15px;
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10.5px 30px 10px 55px;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        outline: none;
+      }
+      
+    .input:focus {
+        border-bottom: 1px solid #006400;
+        -webkit-transition: 0.1s;
+        transition: 0.5s;
+    }
+    .container-input img{
+        position: absolute;
+        left: 36.5%;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 61.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 61.5%;
+    }
+    #button {
+        color: white;
+        background-color: #006400;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        font-size: 20px;
+        line-height: 2rem;
+        padding: 5px 40px 5px 40px;
+        text-align: center;
+        margin-right: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .reminder #note, #details{
+        font-size: 100%;
+    }
+    .reminder #note{
+        position: absolute;
+        color: #D9A217;
+        margin-right: 23%;
+    }
+    .reminder #details{
+        margin-left: 30%;
+        margin-right: 10%;  
+    }
+    .voted{
+        display: none;
+    }
+    
+    .voted .seeresultbtn{
+        margin: 10px 17% 10px 17%;
+    }
+    .jconfirm-box-container {
+        margin: 0% 26% 0% 26%;
+    }
+}
+
+@media (min-width:1025px) {
+    header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 120px;
+        height: 120px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-right: 23px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 23px;
+        z-index: 0;
+    }
+    header .text h1{
+        color: #fff;
+        font-size: 29px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        display: flex;
+        margin-right: 80px;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span{
+        display: block;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 88px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 35px;
+        background: #004300;
+        position: absolute;
+        top: 88px;
+        z-index: 1;
+        position: fixed;
+        border: #000 solid 0.1px;
+    }
+    .login{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: rgba(0, 0, 0, 0.65);
+        align-items: center;
+        border-radius: 15px;
+        z-index: 2;
+        margin-top: 19%;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-bottom: 30px;
+    }
+    .login h1{
+        color: #D9A217;
+        text-align: center;
+        font-size: 44px;
+        font-family: Serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .login h4{
+        color: #FFF;
+        font-size: 15px;
+        text-align: center;
+        margin-right: 210px;
+        margin-bottom: 7px;
+    }
+    .container-input{
+        display: flex;
+        justify-content: center;
+    }
+    .input {
+        font-weight: 500;
+        font-size: 15px;
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10.5px 30px 10px 55px;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        outline: none;
+      }
+      
+    .input:focus {
+        border-bottom: 1px solid #006400;
+        -webkit-transition: 0.1s;
+        transition: 0.5s;
+    }
+    .container-input img{
+        left: 37.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 60%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 60%;
+    }
+    #button {
+        color: white;
+        background-color: #006400;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        font-size: 20px;
+        line-height: 2rem;
+        padding: 5px 40px 5px 40px;
+        text-align: center;
+        margin-right: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .reminder #note, #details{
+        font-size: 100%;
+    }
+    .reminder #note{
+        font-weight: 800;
+        position: absolute;
+        color: #D9A217;
+        margin-right: 18%;
+    }
+    .reminder #details{
+        margin-left: 30%;
+        margin-right: 10%;  
+    }
+    .voted{
+        display: none;
+    }
+    
+    .voted .seeresultbtn{
+        margin: 10px 20% 10px 20%;
+    }
+    .jconfirm-box-container {
+        margin: 0% 33% 20% 33%;
+    }
+}
+
+@media (min-width:1185px) {
+    .container-input img{
+        left: 38.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 59%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 59%;
+    }
+}
+@media (min-width:1249px) {
+    .container-input img{
+        left: 39.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 58.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 58.5%;
+    }
+}
+@media (min-width:1329px) {
+    .container-input img{
+        left: 40%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 57.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 57.5%;
+    }
+}
+@media (min-width:1399px) {
+    .container-input img{
+        left: 40.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 57.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 57.5%;
+    }
+}
+@media (min-width:1489px) {
+    .container-input img{
+        left: 41%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 57.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 57.5%;
+    }
+}
+@media (min-width:1578px) {
+    .container-input img{
+        left: 41.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 57.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 57.5%;
+    }
+}
+@media (min-width:1658px) {
+    .container-input img{
+        left: 42%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 57%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 57%;
+    }
+}
+@media (min-width:1760px) {
+    .container-input img{
+        left: 42.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 56.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 56.5%;
+    }
+}
+@media (min-width:1860px) {
+    .container-input img{
+        left: 43%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 56%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 56%;
+    }
+}
+@media (min-width:1999px) {
+    .container-input img{
+        left: 43.5%;
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    
+    .container-input #show, #hide{
+        margin-top: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .container-input #show{
+        left: 55.5%;
+        display: none;
+    }
+    .container-input #hide{
+        left: 55.5%;
+    }
+}

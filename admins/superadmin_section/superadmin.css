@@ -1,0 +1,3823 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+}
+header .logo{
+    overflow-y: hidden;
+}
+header .logo img{
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 23px;
+    z-index: 1;
+}
+header .text{
+    margin-top: 23px;
+    z-index: 0;
+}
+header .text h1{
+    color: #fff;
+    font-size: 29px;
+    font-family: Serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+header .text h4{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+header .text h5{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#background-header-1{
+    width: 100%;
+    height: 88px;
+    background: #006400;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+#background-header-2{
+    width: 80%;
+    height: 35px;
+    background: #004300;
+    position: absolute;
+    top: 88px;
+    z-index: -1;
+    border: #000 solid 0.1px;
+}
+
+.main{
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Left Side after ng Header */
+
+.main nav{
+    width: 20%;
+    padding-bottom: calc(100vh - 550px);
+    background-color: rgba(199, 211, 111, 0.54);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main nav h2{
+    padding: 14px 0px 13px 0px;
+    width: 100%;
+    background-color: #D9A217;
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main nav .nav1{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.main nav .nav1 .nav1-left{
+    display: flex;
+    align-items: center;
+    margin-right: 98px;
+}
+.main nav .nav1 .nav1-left img{
+    margin-right: 10px;
+}
+.main nav .nav1 .nav1-right img{
+    transform: rotate(270deg);
+    height: 30px;
+    width: 20px;
+}
+.main nav .nav2{
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.main nav .nav2 .nav2-left{
+    display: flex;
+    align-items: center;
+    margin-right: 108px;
+}
+.main nav .nav2 .nav2-left img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.main nav .nav2 .nav2-right{
+    margin-right: 5px;
+}
+.main nav .nav2 .nav2-right img{
+    height: 23px;
+    width: 13px;
+}
+.main nav .nav3{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.main nav .nav3 .nav3-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+}
+.main nav .nav3 .nav3-left img{
+    margin-right: 10px;
+}
+.main nav .nav4{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.main nav .nav4 .nav4-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+}
+.main nav .nav4 .nav4-left img{
+    margin-right: 10px;
+    height: 25px;
+}
+.main nav .nav5{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.main nav .nav5 .nav5-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 39px;
+}
+.main nav .nav5 .nav5-left img{
+    margin-right: 15px;
+}
+
+.main nav h2{
+    cursor: pointer;
+}
+.main nav h2 img{
+    margin-left: 30px;
+}
+
+.main nav .adminnav{
+    margin: 20px 25px 0px 0px;
+    display: flex;
+    display: none;
+}
+.main nav .adminnav .adminnav-left{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.main nav .adminnav .adminnav-left img{
+    margin-right: 10px;
+}
+.main nav #line{
+    margin-top: 20px;
+    border: #000 solid 1px;
+    width: 250px;
+    display: none;
+}
+.main nav .superadminnav{
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    display: none;
+}
+.main nav .superadminnav .superadminnav-left{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.main nav .superadminnav .superadminnav-left img{
+    margin-right: 10px;
+}
+.main nav .superadminnav .superadminnav-left #deactivate{
+    display: none;
+}
+
+
+.main nav .electiondetailsnav{
+    display: none;
+}
+.main nav #dropbox{
+    display: flex;
+    align-items: center;
+}
+.main nav #dropbox select{
+    margin-top: 20px;
+    padding: 10px 5px 10px 30px;
+    cursor: pointer;
+}
+.main nav #dropbox img{
+    position: absolute;
+    z-index: 3;
+    margin-top: 18px;
+    margin-left: 8px;
+}
+.main nav .electiondetailsnav h4{
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.main nav .electiondetailsnav #proceed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px;
+    width: 140px;
+    margin-left: 30px;
+    color: #006400;
+    cursor: pointer;
+    border-color: #006400;
+}
+.main nav .electiondetailsnav #proceed:hover{
+    color: white;
+    background-color: #006400;
+}
+.main nav .electiondetailsnav #proceed img{
+    margin-right: 10px;
+}
+.main nav .electiondetailsnav .newelectionevent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.main nav .electiondetailsnav .newelectionevent h3{
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+
+
+
+.main nav .navfooter{
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    cursor: pointer;
+}
+.main nav .navfooter .navfooter-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main nav .navfooter .navfooter-left img{
+    margin-right: 10px;
+}
+.main nav .navfooter:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Right Side after ng Header */
+
+.main section{
+    width: 80%;
+}
+.main section .section1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px 0px 15px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+.main section .section1 h2{
+    color: #000;
+    text-align: center;
+    font-size: 28px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main section .section1 .right-side{
+    display: flex;
+}
+.main section .section1 .right-side div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.main section .section1 .right-side div img{
+    margin-right: 10px;
+}
+.main section .section1 .right-side div h3{
+    font-style: normal;
+    font-size: 14px;
+}
+.main section #colorway1{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #D9A217;
+    cursor: pointer;
+}
+.main section #colorway2{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #65C9FF;
+    cursor: pointer;
+}
+.main section #colorway3{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #AA0D0D;
+    cursor: pointer;
+}
+.main section .section1 .right-side h3 span{
+    font-size: small;
+}
+
+.main section #section1-line{
+    border: #000 solid 1px;
+}
+ 
+.main section .section2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px 0px 15px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+.main section .section2 .left-side div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.main section .section2 .left-side div h3{
+    font-style: normal;
+    font-size: 14px;
+}
+.main section .section2 .left-side h3 span{
+    font-size: small;
+}
+.main section #colorway4{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #9EB23B;
+    cursor: pointer;
+}
+.main section .section2 .left-side div img{
+    margin-right: 10px;
+}
+.main section .section2 .right-side{
+    display: flex;
+}
+.main section .section2 .right-side div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.main section .section2 .right-side div h3{
+    font-style: normal;
+    font-size: 14px;
+}
+.main section .section2 .right-side h3 span{
+    font-size: small;
+}
+.main section #colorway5{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #006400;
+    cursor: pointer;
+}
+.main section .section2 .right-side div img{
+    margin-right: 10px;
+}
+
+.main section .section3 .right-side{
+    display: flex;
+}
+.main section .section3{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px 0px 15px;
+    align-items: center;
+}
+.main section .section3 .left-side div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.main section .section3 .left-side div img{
+    margin-right: 10px;
+}
+.main section .section3 .left-side div h3{
+    font-style: normal;
+    font-size: 14px;
+}
+.main section .section3 .left-side h3 span{
+    font-size: small;
+}
+.main section .section3 .right-side div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+.main section .section3 .right-side div img{
+    margin-right: 10px;
+}
+.main section .section3 .right-side div h3{
+    font-style: normal;
+    font-size: 14px;
+}
+.main section .section3 .right-side h3 span{
+    font-size: small;
+}
+
+/* CSS for tables */
+.main section .section4{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main section .section4 h2{
+    background-color: #C7D36F;
+    margin: 10px 15px 0px 15px;
+    padding: 5px 0px 5px 20px;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main section .section4 table{
+    margin: 60px 15px 0px 15px;
+    border: #115D33 solid 1px;
+    width: 97%;
+    border-collapse: collapse;
+    background-color: #E8FFCE;
+}
+.main section .section4 th {
+    font-size: larger;
+    background-color: #A8DF8E;
+}
+.main section .section4 th, .section4 td {
+  padding: 10px;
+  border: 1px solid #115D33;
+  text-align: center;
+}
+.main section .section4 td{
+    font-size: large;
+}
+.main section .section4 .missionstate{
+    max-width: 200px;
+    word-wrap: break-word;
+}
+.main section .section4 td img {
+    width: 150px;
+    height: 150px;
+}
+.main section .section4 .button{
+    display: flex;
+    justify-content: center;
+}
+.main section .section4 .button #colorway1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #AA0D0D;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main section .section4 .button #colorway2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #006400;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.main section .section4 .button img{
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Search Bar CSS HERE */
+.main section .section4 div .searchBar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.main section .section4 div .searchBar input{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    padding: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main section .section4 div .searchBar label{
+    font-weight: 600;
+}
+.main section .section4 div .searchBar img{
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 5px;
+    height: 17px;
+    width: 17px;
+    
+}
+
+/* CSS for tables */
+.main section .section5{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.main section .section5 h2{
+    background-color: #C7D36F;
+    margin: 10px 15px 0px 15px;
+    padding: 5px 0px 5px 20px;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Alam kung pupunta ka dito para adjust ung table pero wag mo na subukan
+Masisira ang buhay mo, kaya yan nakaganyan kasi pagnilagay na pagination
+kusa na yan baba ba */
+.main section .section5 table{
+    margin: 60px 15px 0px 15px;
+    border: #115D33 solid 1px;
+    width: 97%;
+    border-collapse: collapse;
+    background-color: #E8FFCE;
+}
+.main section .section5 th {
+    font-size: larger;
+    background-color: #A8DF8E;
+}
+.main section .section5 th, .section5 td {
+  padding: 10px;
+  border: 1px solid #115D33;
+  text-align: center;
+}
+.main section .section5 td{
+    font-size: large;
+}
+.main section .section5 .missionstate{
+    max-width: 200px;
+    word-wrap: break-word;
+}
+.main section .section5 td img {
+    width: 150px;
+    height: 150px;
+}
+.main section .section5 .button{
+    display: flex;
+    justify-content: center;
+}
+#colorwaytwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #AA0D0D;
+    cursor: pointer;
+    text-decoration: none;
+}
+#colorwaytwo:hover{
+    background-color: #AA0D0D;
+    color: white;
+}
+#colorwayone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #006400;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+#colorwayone:hover{
+    background-color: #006400;
+    color: white;
+}
+.main section .section5 .button img{
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Search Bar CSS HERE */
+.main section .section5 div .searchBar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.main section .section5 div .searchBar input{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    padding: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main section .section5 div .searchBar label{
+    font-weight: 600;
+}
+.main section .section5 div .searchBar img{
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    margin-right: 8px;
+    margin-top: 5px;
+    height: 17px;
+    width: 17px;
+    
+}
+
+.main section .section6 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.main section .section6 h2 {
+    background-color: #C7D36F;
+    margin: 5px 15px 0px 15px;
+    padding: 5px 0px 5px 30px;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main section .section6 .section6-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 10px 15px;
+    align-items: center;
+}
+
+.main section .section6 .section6-top div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+
+.main section .section6 .section6-top div select {
+    padding: 10px;
+    font-size: 25pxs;
+    margin-right: 10px;
+}
+
+.main section .section6 .section6-top div img {
+    margin-right: 10px;
+}
+
+.main section .section6 .section6-top div h3 {
+    font-style: normal;
+    font-size: 16px;
+}
+
+.main section .section6 .section6-mid {
+    position: relative;
+    z-index: -2;
+    overflow-y: hidden;
+    background-color: #fafafa;
+    height: 450px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a black shadow */
+}
+
+
+.fullscreen {
+    transition: transform 0.5s;
+}
+
+
+
+.chart-canvas {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 700px;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.content {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.next-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid  rgb(185, 185, 185);
+    /* Change the color to your desired color */
+    border-right: 4px solid  rgb(185, 185, 185);
+    /* Change the color to your desired color */
+    transform: rotate(-135deg);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.arrow-right {
+    transform: rotate(45deg);
+}
+
+.indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.indicator-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:  rgb(185, 185, 185);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator-dot.active {
+    transform: scale(1.0);
+    background-color:  black;
+}
+
+.main section .section6 .section6-mid .slider .slides .slide-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultPosition {
+    font-size: 60px;
+    position: absolute;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-family: Serif;
+}
+
+#votingChart1,
+#votingChart2,
+#votingChart3,
+#votingChart4,
+#votingChart5,
+#votingChart6,
+#votingChart7,
+#votingChart8,
+#votingChart9,
+#votingChart10,
+#votingChart11,
+#votingChart12,
+#votingChart13,
+#votingChart14,
+#votingChart15 {
+    position: absolute;
+    margin-top: -215px;
+    margin-left: 100px;
+}
+
+#fullscreen {
+    cursor: pointer;
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    top: 700px; 
+    left: 95%; 
+    
+    transform: translate(-50%, -50%); 
+}
+
+/* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+.section6-table table {
+    margin: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    width: 98.3%;
+    border: black solid 1px;
+    font-size: 23px;
+}
+
+.section6-table table, .section6-table th, .section6-table td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 100%;
+    text-align: center;
+}
+.section6-table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section6-table td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.section6-table #col1{
+    width: 70%;
+    padding-left: 25px;
+    text-align: left;
+}
+.section6-table th{
+    background-color: #C7D36F;
+}
+.section6-table table img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.section6-table table #votes{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #D9A217;
+}
+
+/* CANDIDATE LIST */
+.main section .section7 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.main section .section7 h2 {
+    background-color: #C7D36F;
+    margin: 5px 15px 0px 15px;
+    padding: 5px 0px 5px 30px;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+.main section .section7-top{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+.main section .section7-right{
+    display: flex;
+    flex-direction: column;
+}
+.main section .section7-right div{
+    display: flex;
+    justify-content: end;
+}
+.main section .section7-right .div2{
+    margin-top: 15px;
+}
+.main section .section7-right .section7-right1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006400;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+}
+.main section .section7-right .section7-right1 img{
+    margin-right: 10px;
+}
+.main section .section7-right .section7-right1:hover{
+    background-color: #006400;
+    color: white;
+}
+.main section .section7-right .section7-right2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #9EB23B;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+}
+.main section .section7-right .section7-right2 img{
+    margin-right: 10px;
+}
+.main section .section7-right .section7-right2:hover{
+    background-color: #9EB23B;
+    color: white;
+}
+.main section .section7-right .section7-right3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006400;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+.main section .section7-right .section7-right3 img{
+    margin-right: 10px;
+}
+.main section .section7-right .section7-right3:hover{
+    background-color: #006400;
+    color: white;
+}
+.main section .section7-right .section7-right4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #9EB23B;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    margin-right: 15px;
+}
+.main section .section7-right .section7-right4 img{
+    margin-right: 10px;
+}
+.main section .section7-right .section7-right4:hover{
+    background-color: #9EB23B;
+    color: white;
+}
+.main section .section7-right .section7-right5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #006400;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+}
+.main section .section7-right .section7-right5 img{
+    margin-right: 10px;
+}
+.main section .section7-right .section7-right5:hover{
+    background-color: #006400;
+    color: white;
+}
+.main section .section7 .section7-left{
+    display: flex;
+    text-align: center;
+    margin-left: 25px;
+}
+.main section .section7 .section7-left select{
+    height: 40px;
+    padding: 10px;
+    font-size: 25pxs;
+}
+.main section .section7 .section7-left h3{
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.main section .section7-main{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.main section .section7-main table{
+    border: #115D33 solid 1px;
+    width: 97%;
+    border-collapse: collapse;
+    background-color: #E8FFCE
+}
+.main section .section7-main th {
+    font-size: larger;
+    background-color: #A8DF8E;
+}
+.main section .section7-main th, .section7-main td {
+  padding: 10px;
+  border: 1px solid #115D33;
+  text-align: center;
+}
+.main section .section7-main td{
+    font-size: large;
+}
+.main section .section7-main .missionstate{
+    max-width: 200px;
+    word-wrap: break-word;
+}
+.main section .section7-main td img {
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+}
+.main section .section7-main .button{
+    display: flex;
+    flex-direction: column;
+}
+.main section .section7-main .button #colorway1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #AA0D0D;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main section .section7-main .button #colorway1:hover{
+    background-color: #AA0D0D;
+    color: white;
+}
+.main section .section7-main .button #colorway2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #006400;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.main section .section7-main .button #colorway2:hover{
+    background-color: #006400;
+    color: white;
+}
+.main section .section7-main .button img{
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* AUDIT TRIAL REPORT CSS */
+.main section .section8 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.main section .section8 h2 {
+    background-color: #C7D36F;
+    margin: 5px 15px 0px 15px;
+    padding: 5px 0px 5px 30px;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: start;
+}
+.main section .section8-main{
+    height: 500px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+.main section .section8-main table{
+    border: #115D33 solid 1px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #E8FFCE
+}
+.main section .section8-main th {
+    font-size: medium;
+    background-color: #A8DF8E;
+    position: sticky;
+    top: 0;
+}
+.main section .section8-main th, .section8-main td {
+  padding: 10px;
+  border: 1px solid #115D33;
+  text-align: center;
+}
+.main section .section8-main td{
+    font-size: medium;
+}
+
+/* NOTIFICATIONSSSS */
+.jconfirm-box-container {
+    margin: 15% 35% 20% 35%;
+}
+.jconfirm-title {
+    pointer-events: none;
+    overflow-y: hidden;
+    padding-bottom: 1px;
+}
+.btn-yes {
+    background-color: #006400;
+    color: white;
+}
+.btn-cancel {
+    color: white;
+    background-color: #D9A217;
+}
+.btn-confirm {
+    background-color: #AA0D0D;
+    color: white;
+}
+.jconfirm .jconfirm-box.loading:after {
+    opacity: 1;
+    border-bottom-color: #006400;
+}
+.jconfirm .jconfirm-box.loading:before {
+    content: "\A Just Wait, it takes some time\A\A\A\A Don't worry, it will give a notification when it's done.";
+    white-space: pre;
+    position: absolute;
+    left: 0;
+    background: white;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Pagination CSS HERE */
+.pagination {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    position: absolute;
+    top: 346px;
+    left: 20%;
+}
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #004300;
+    color: #fff;
+    border-color: #006400;
+}
+.pagination a:hover {
+    background-color: #eee;
+}
+.pagination span {
+    background-color: #004300;
+    color: #fff;
+    border-color: #006400;
+}
+
+/* pagination1 CSS HERE */
+.pagination1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    position: absolute;
+    top: 346px;
+    left: 20%;
+}
+.pagination1 a,
+.pagination1 span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.pagination1 a.active {
+    background-color: #004300;
+    color: #fff;
+    border-color: #006400;
+}
+.pagination1 a:hover {
+    background-color: #eee;
+}
+.pagination1 span {
+    background-color: #004300;
+    color: #fff;
+    border-color: #006400;
+}
+
+/* Edit Student CSS HERE */
+.editstudent-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+}
+
+.editstudent-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+}
+.editstudent-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.editstudent-background .editstudent-main{
+    display: flex;
+    justify-content: space-around;
+}
+.editstudent-background .editstudent-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.editstudent-background .line{
+    border-top: #000 solid 1px;
+}
+.editstudent-background .editstudent-main .editstudent-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.editstudent-background .editstudent-main .editstudent-right{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    
+}
+.editstudent-background .editstudent-main input{
+    padding: 5px;
+    cursor: pointer;
+}
+.editstudent-background .editstudent-main input[readonly]{
+    background-color: #ccc;
+}
+.editstudent-background .editstudent-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.editstudent-background .editstudent-main input[type=text], .editstudent-background .editstudent-main input[type=number]{
+    cursor: text;
+}
+
+.editstudent-background .editstudent-footer{
+    margin: 10px 15px 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.editstudent-background .editstudent-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.editstudent-background .editstudent-footer #submitbtn2{
+    background-color: #006400;
+    color: white;
+}
+
+.editstudent-background .editstudent-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* Hovers para sa mga button sa taas */
+.main section #colorway1:hover{
+    background-color: #D9A217;
+    color: white;
+}
+.main section #colorway2:hover{
+    background-color: #65C9FF;
+    color: white;
+}
+.main section #colorway3:hover{
+    background-color: #AA0D0D;
+    color: white;
+}
+.main section #colorway4:hover{
+    background-color: #9EB23B;
+    color: white;
+}
+.main section #colorway5:hover{
+    background-color: #006400;
+    color: white;
+}
+
+/* ACTIVATE VOTERS CSS HERE*/
+.activateVoters-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.activateVoters-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.activateVoters-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.activateVoters-background .activateVoters-main{
+    display: flex;
+    justify-content: space-around;
+}
+.activateVoters-background .activateVoters-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.activateVoters-background .line{
+    border-top: #000 solid 1px;
+}
+.activateVoters-background .activateVoters-main .activateVoters-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.activateVoters-background .activateVoters-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.activateVoters-background .activateVoters-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.activateVoters-background .activateVoters-main input[type=text], .activateVoters-background .activateVoters-main input[type=number]{
+    cursor: text;
+}
+
+.activateVoters-background .activateVoters-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.activateVoters-background .activateVoters-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.activateVoters-background .activateVoters-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* Send Password sa mga Emails CSS HERE*/
+.SendPasswordToEmails-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.SendPasswordToEmails-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.SendPasswordToEmails-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPawordToEmails-Top-Left{
+    width: 40%;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPawordToEmails-Top-Left h3{
+    display: flex;
+    justify-content: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPawordToEmails-Top-Left .SendPasswordToEmails-Top-Body{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPawordToEmails-Top-Right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPawordToEmails-Top-Right label{
+    margin: 10px 0px 10px 0px;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPawordToEmails-Top-Right input[type=radio]{
+    accent-color: #006400;
+    height: 15px;
+    width: 15px;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPasswordToEmails-Top-Body h3{
+    margin: 0px 15px 0px 15px;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPasswordToEmails-Top-Body1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-Top .SendPasswordToEmails-Top-Body1 h3{
+    margin: 15px 0px 0px 0px;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.SendPasswordToEmails-background .line{
+    border-top: #000 solid 1px;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-left label{
+    display: flex;
+    justify-content: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-left input{
+    width: 54%;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main .SendPasswordToEmails-left div{
+    display: flex;
+    justify-content: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-main input[type=text], .SendPasswordToEmails-background .SendPasswordToEmails-main input[type=number]{
+    cursor: text;
+}
+
+.SendPasswordToEmails-background .SendPasswordToEmails-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SendPasswordToEmails-background .SendPasswordToEmails-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.SendPasswordToEmails-background .SendPasswordToEmails-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* GeneratePassword for VOTERS CSS HERE*/
+.GeneratePassword-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.GeneratePassword-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.GeneratePassword-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.GeneratePassword-background .GeneratePassword-main{
+    display: flex;
+    justify-content: space-around;
+}
+.GeneratePassword-background .GeneratePassword-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.GeneratePassword-background .line{
+    border-top: #000 solid 1px;
+}
+.GeneratePassword-background .GeneratePassword-main .GeneratePassword-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.GeneratePassword-background .GeneratePassword-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.GeneratePassword-background .GeneratePassword-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.GeneratePassword-background .GeneratePassword-main input[type=text], .GeneratePassword-background .GeneratePassword-main input[type=number]{
+    cursor: text;
+}
+
+.GeneratePassword-background .GeneratePassword-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.GeneratePassword-background .GeneratePassword-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.GeneratePassword-background .GeneratePassword-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* DOWNLOAD DATABASE for VOTERS CSS HERE*/
+.DownloadDatabase-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.DownloadDatabase-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.DownloadDatabase-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.DownloadDatabase-background .DownloadDatabase-main{
+    display: flex;
+    justify-content: space-around;
+}
+.DownloadDatabase-background .DownloadDatabase-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.DownloadDatabase-background .line{
+    border-top: #000 solid 1px;
+}
+.DownloadDatabase-background .DownloadDatabase-main .DownloadDatabase-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.DownloadDatabase-background .DownloadDatabase-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.DownloadDatabase-background .DownloadDatabase-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.DownloadDatabase-background .DownloadDatabase-main input[type=text], .DownloadDatabase-background .DownloadDatabase-main input[type=number]{
+    cursor: text;
+}
+
+.DownloadDatabase-background .DownloadDatabase-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DownloadDatabase-background .DownloadDatabase-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.DownloadDatabase-background .DownloadDatabase-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* ELECTION INFORMATION CSS HERE*/
+.ElectionInformation-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.ElectionInformation-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.ElectionInformation-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ElectionInformation-background .ElectionInformation-main{
+    display: flex;
+    justify-content: space-around;
+}
+.ElectionInformation-background .ElectionInformation-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.ElectionInformation-background .line{
+    border-top: #000 solid 1px;
+}
+.ElectionInformation-background .ElectionInformation-main .ElectionInformation-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.ElectionInformation-background .ElectionInformation-main input{
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+.ElectionInformation-background .ElectionInformation-main textarea{
+    padding: 5px;
+    font-weight: bolder;
+    color: black;
+}
+.ElectionInformation-background .ElectionInformation-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.ElectionInformation-background .ElectionInformation-main input[type=text], .ElectionInformation-background .ElectionInformation-main input[type=number]{
+    cursor: text;
+}
+
+.ElectionInformation-background .ElectionInformation-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ElectionInformation-background .ElectionInformation-footer #btnClose{
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #AA0D0D;
+    cursor: pointer;
+}
+.ElectionInformation-background .ElectionInformation-footer #btnClose h3{
+    font-weight: 600;
+    font-size: 13px;
+}
+.ElectionInformation-background .ElectionInformation-footer #btnClose:hover{
+    color: white;
+    background-color: #AA0D0D;
+}
+.ElectionInformation-background .ElectionInformation-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* NEW ELECTION CSS HERE*/
+.NewElection-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.NewElection-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.NewElection-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.NewElection-background .NewElection-main{
+    display: flex;
+    justify-content: space-around;
+}
+.NewElection-background .line{
+    border-top: #000 solid 1px;
+}
+.NewElection-background .NewElection-main .NewElection-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.NewElection-background .NewElection-main input{
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.NewElection-background .NewElection-main textarea{
+    padding: 5px;
+}
+.NewElection-background .NewElection-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.NewElection-background .NewElection-main input[type=text], .NewElection-background .NewElection-main input[type=number]{
+    cursor: text;
+}
+
+.NewElection-background .NewElection-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.NewElection-background .NewElection-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.NewElection-background .NewElection-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* NEW ADMIN CSS HERE*/
+.NewAdmin-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.NewAdmin-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.NewAdmin-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.NewAdmin-background .NewAdmin-main{
+    display: flex;
+    justify-content: space-around;
+}
+.NewAdmin-background .NewAdmin-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.NewAdmin-background .line{
+    border-top: #000 solid 1px;
+}
+.NewAdmin-background .NewAdmin-main .NewAdmin-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.NewAdmin-background .NewAdmin-main .NewAdmin-left img{
+    z-index: 4;
+    position: absolute;
+    top: 63%;
+    right: 25%;
+    cursor: pointer;
+}
+.NewAdmin-background .NewAdmin-main .NewAdmin-left #show{
+    display: none;
+}
+.NewAdmin-background .NewAdmin-main .NewAdmin-left input{
+    padding: 5px;
+    text-align: center;
+}
+.NewAdmin-background .NewAdmin-main textarea{
+    padding: 5px;
+}
+.NewAdmin-background .NewAdmin-main label{ 
+    text-align: center;
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.NewAdmin-background .NewAdmin-main input[type=text], .NewAdmin-background .NewAdmin-main input[type=number]{
+    cursor: text;
+}
+
+.NewAdmin-background .NewAdmin-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.NewAdmin-background .NewAdmin-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.NewAdmin-background .NewAdmin-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* Delete Election Batch CSS HERE*/
+/* KAPAG gagawa ka ng bagong notif na need hingiin password ni superadmin wag mo ito kuning CSS kunin mo sa taas
+   Dahil mas mataas ang index nito compare sa ibang Notif*/
+.DelElectionBatch-blackbackground{
+    z-index: 4;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.DelElectionBatch-background{
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.DelElectionBatch-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.DelElectionBatch-background .DelElectionBatch-main{
+    display: flex;
+    justify-content: space-around;
+}
+.DelElectionBatch-background .DelElectionBatch-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.DelElectionBatch-background .line{
+    border-top: #000 solid 1px;
+}
+.DelElectionBatch-background .DelElectionBatch-main .DelElectionBatch-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.DelElectionBatch-background .DelElectionBatch-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.DelElectionBatch-background .DelElectionBatch-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.DelElectionBatch-background .DelElectionBatch-main input[type=text], .DelElectionBatch-background .DelElectionBatch-main input[type=number]{
+    cursor: text;
+}
+
+.DelElectionBatch-background .DelElectionBatch-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DelElectionBatch-background .DelElectionBatch-footer input{
+    padding: 5px 20px;
+    background-color: #AA0D0D;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.DelElectionBatch-background .DelElectionBatch-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* LIST OF ADMIN CSS HERE*/
+.ListofAdmins-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.ListofAdmins-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.ListofAdmins-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ListofAdmins-background .ListofAdmins-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.ListofAdmins-background .line{
+    border-top: #000 solid 1px;
+}
+.ListofAdmins-background .ListofAdmins-main table{
+    margin: 20px 0px 20px 0px;
+    border-collapse: collapse;
+    width: 80%;
+}
+.ListofAdmins-background .ListofAdmins-main table tr{
+    border-bottom: #000 solid 1px;
+}
+.ListofAdmins-background .ListofAdmins-main table th{
+    font-size: 20px;
+}
+.ListofAdmins-background .ListofAdmins-main table th, .ListofAdmins-background .ListofAdmins-main table td{
+    text-align: center;
+}
+.ListofAdmins-background .ListofAdmins-main table td{
+    padding: 10px;
+}
+.ListofAdmins-background .ListofAdmins-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListofAdmins-background .ListofAdmins-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+    margin-left: 85%;
+}
+
+/* NEW SUPERADMIN CSS HERE*/
+.SuperNewAdmin-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.SuperNewAdmin-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.SuperNewAdmin-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.SuperNewAdmin-background .SuperNewAdmin-main{
+    display: flex;
+    justify-content: space-around;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.SuperNewAdmin-background .line{
+    border-top: #000 solid 1px;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main .SuperNewAdmin-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main .SuperNewAdmin-left img{
+    z-index: 4;
+    position: absolute;
+    top: 63%;
+    right: 25%;
+    cursor: pointer;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main .SuperNewAdmin-left #show{
+    display: none;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main .SuperNewAdmin-left input{
+    padding: 5px;
+    text-align: center;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main textarea{
+    padding: 5px;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main label{ 
+    text-align: center;
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.SuperNewAdmin-background .SuperNewAdmin-main input[type=text], .SuperNewAdmin-background .SuperNewAdmin-main input[type=number]{
+    cursor: text;
+}
+
+.SuperNewAdmin-background .SuperNewAdmin-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.SuperNewAdmin-background .SuperNewAdmin-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.SuperNewAdmin-background .SuperNewAdmin-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* LIST OF SUPERADMIN CSS HERE*/
+.ListofSuperadmins-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.ListofSuperadmins-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.ListofSuperadmins-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ListofSuperadmins-background .ListofSuperadmins-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.ListofSuperadmins-background .line{
+    border-top: #000 solid 1px;
+}
+.ListofSuperadmins-background .ListofSuperadmins-main table{
+    margin: 20px 0px 20px 0px;
+    border-collapse: collapse;
+    width: 80%;
+}
+.ListofSuperadmins-background .ListofSuperadmins-main table tr{
+    border-bottom: #000 solid 1px;
+}
+.ListofSuperadmins-background .ListofSuperadmins-main table th{
+    font-size: 20px;
+}
+.ListofSuperadmins-background .ListofSuperadmins-main table th, .ListofSuperadmins-background .ListofSuperadmins-main table td{
+    text-align: center;
+}
+.ListofSuperadmins-background .ListofSuperadmins-main table td{
+    padding: 10px;
+}
+.ListofSuperadmins-background .ListofSuperadmins-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListofSuperadmins-background .ListofSuperadmins-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+    margin-left: 85%;
+}
+
+/* ITO IS GALING SA ADMIN SIDE PARA MAKAPAG-ADD NG CANDIDATE */
+/* Add NEW Candidates CSS */
+.addcandidates-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+}
+
+.addcandidates-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    display: none;
+    position: fixed;
+}
+.addcandidates-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.addcandidates-background .addcandidates-main{
+    display: flex;
+    justify-content: space-around;
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+}
+.addcandidates-background .addcandidates-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.addcandidates-background .addcandidates-main .addcandidates-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+}
+.addcandidates-background .addcandidates-main .addcandidates-right{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.addcandidates-background .addcandidates-main input[type=radio]{
+    accent-color: #006400;
+}
+
+.addcandidates-background .addcandidates-main #genderfont{
+    font-weight: 400;
+}
+.addcandidates-background .addcandidates-main input, select{
+    padding: 5px;
+    cursor: pointer;
+}
+.addcandidates-background .addcandidates-main .addcandidates-left .div1{
+    width: 100%;
+    display: flex;
+}
+.addcandidates-background .addcandidates-main .addcandidates-left .div1 .div1-left input, .div1-right input{
+    margin-right: 10%;
+    width: 100%;
+}
+.addcandidates-background .addcandidates-main .addcandidates-left .div1 .div1-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.addcandidates-background .addcandidates-main .addcandidates-left .div1 .div1-right{
+    width: 50%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.addcandidates-background .addcandidates-main label{
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.addcandidates-background .addcandidates-main textarea{
+    padding: 5px;
+}
+
+.addcandidates-background .addcandidates-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addcandidates-background .addcandidates-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.addcandidates-background .addcandidates-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* Update Candidate CSS */
+
+.updatecandidates-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    position: fixed;
+}
+
+.updatecandidates-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+}
+.updatecandidates-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.updatecandidates-background .updatecandidates-main{
+    display: flex;
+    justify-content: space-around;
+    border-top: #000 1px solid;
+    border-bottom: #000 1px solid;
+}
+.updatecandidates-background .updatecandidates-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-right{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-right .updatecandidates-right-main{
+    display: flex;
+    align-items: center;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-right img{
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    margin-left: 20%;
+    margin-top: 5px;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-right .updatecandidates-right-right{
+    margin-left: 10%;
+}
+
+.updatecandidates-background .updatecandidates-main input[type=radio]{
+    accent-color: #006400;
+}
+
+.updatecandidates-background .updatecandidates-main #genderfont{
+    font-weight: 400;
+}
+.updatecandidates-background .updatecandidates-main input, select{
+    padding: 5px;
+    cursor: pointer;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left .div1{
+    width: 100%;
+    display: flex;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left .div1 .div1-left input, .div1-right input{
+    margin-right: 10%;
+    width: 100%;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left .div1 .div1-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left .div1 .div1-right{
+    width: 50%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.updatecandidates-background .updatecandidates-main label{
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+/* .updatecandidates-background .updatecandidates-main .updatecandidates-left div label[for=middlename]{
+    margin-left: 29.5%;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left div #middlename{
+    margin-left: 2%;
+}
+.updatecandidates-background .updatecandidates-main .updatecandidates-left div input{
+    padding-right: 10%;
+} */
+.updatecandidates-background .updatecandidates-main textarea{
+    padding: 5px;
+}
+/* .updatecandidates-background .updatecandidates-main input[type=text]{
+    cursor: text;
+} */
+
+.updatecandidates-background .updatecandidates-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.updatecandidates-background .updatecandidates-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.updatecandidates-background .updatecandidates-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+
+/* Add Position CSS HERE*/
+.addposition_candidate-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.addposition_candidate-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.addposition_candidate-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.addposition_candidate-background .addposition_candidate-main{
+    display: flex;
+    justify-content: space-around;
+}
+.addposition_candidate-background .addposition_candidate-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.addposition_candidate-background .line{
+    border-top: #000 solid 1px;
+}
+.addposition_candidate-background .addposition_candidate-main .addposition_candidate-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.addposition_candidate-background .addposition_candidate-main .addposition_candidate-left span{
+    display: flex;
+    justify-content: center;
+}
+.addposition_candidate-background .addposition_candidate-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.addposition_candidate-background .addposition_candidate-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.addposition_candidate-background .addposition_candidate-main input[type=text], .addposition_candidate-background .addposition_candidate-main input[type=number]{
+    cursor: text;
+}
+
+.addposition_candidate-background .addposition_candidate-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addposition_candidate-background .addposition_candidate-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.addposition_candidate-background .addposition_candidate-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+/* LIST OF POSITIONS CSS HERE*/
+.ListofPositions-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.ListofPositions-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.ListofPositions-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ListofPositions-background .ListofPositions-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.ListofPositions-background .line{
+    border-top: #000 solid 1px;
+}
+.ListofPositions-background .ListofPositions-main table{
+    margin: 20px 0px 20px 0px;
+    border-collapse: collapse;
+    width: 80%;
+}
+.ListofPositions-background .ListofPositions-main table tr{
+    border-bottom: #000 solid 1px;
+}
+.ListofPositions-background .ListofPositions-main table th{
+    font-size: 20px;
+}
+.ListofPositions-background .ListofPositions-main table th, .ListofPositions-background .ListofPositions-main table td{
+    text-align: center;
+}
+.ListofPositions-background .ListofPositions-main table td{
+    padding: 10px;
+}
+.ListofPositions-background .ListofPositions-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListofPositions-background .ListofPositions-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+    margin-left: 85%;
+}
+
+/* Add Partylist CSS HERE*/
+.addpartylist_candidate-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.addpartylist_candidate-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.addpartylist_candidate-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.addpartylist_candidate-background .addpartylist_candidate-main{
+    display: flex;
+    justify-content: space-around;
+}
+.addpartylist_candidate-background .addpartylist_candidate-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.addpartylist_candidate-background .line{
+    border-top: #000 solid 1px;
+}
+.addpartylist_candidate-background .addpartylist_candidate-main .addpartylist_candidate-left{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.addpartylist_candidate-background .addpartylist_candidate-main .addpartylist_candidate-left span{
+    display: flex;
+    justify-content: center;
+}
+.addpartylist_candidate-background .addpartylist_candidate-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.addpartylist_candidate-background .addpartylist_candidate-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.addpartylist_candidate-background .addpartylist_candidate-main input[type=text], .addpartylist_candidate-background .addpartylist_candidate-main input[type=number]{
+    cursor: text;
+}
+
+.addpartylist_candidate-background .addpartylist_candidate-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addpartylist_candidate-background .addpartylist_candidate-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.addpartylist_candidate-background .addpartylist_candidate-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+/* LIST OF PARTYLIST CSS HERE*/
+.ListofPartyList-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.ListofPartyList-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.ListofPartyList-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ListofPartyList-background .ListofPartyList-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.ListofPartyList-background .line{
+    border-top: #000 solid 1px;
+}
+.ListofPartyList-background .ListofPartyList-main table{
+    margin: 20px 0px 20px 0px;
+    border-collapse: collapse;
+    width: 80%;
+}
+.ListofPartyList-background .ListofPartyList-main table tr{
+    border-bottom: #000 solid 1px;
+}
+.ListofPartyList-background .ListofPartyList-main table th{
+    font-size: 20px;
+}
+.ListofPartyList-background .ListofPartyList-main table th, .ListofPartyList-background .ListofPartyList-main table td{
+    text-align: center;
+}
+.ListofPartyList-background .ListofPartyList-main table td{
+    padding: 10px;
+}
+.ListofPartyList-background .ListofPartyList-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListofPartyList-background .ListofPartyList-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+    margin-left: 85%;
+}
+
+/* Add Print PDF Result CSS HERE*/
+.print_votetally-blackbackground{
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+}
+
+.print_votetally-background{
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 55%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: none;
+}
+.print_votetally-background h2{
+    margin: 15px 15px 15px 15px;
+    background-color: #C7D36F;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.print_votetally-background h3{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.print_votetally-background .print_votetally-main{
+    display: flex;
+    justify-content: space-around;
+}
+.print_votetally-background .print_votetally-main #line-portrait{
+    border-left: #000 solid 1px;
+}
+.print_votetally-background .line{
+    border-top: #000 solid 1px;
+}
+.print_votetally-background .print_votetally-main .print_votetally-left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.print_votetally-background .print_votetally-main .print_votetally-left span{
+    display: flex;
+    justify-content: center;
+}
+.print_votetally-background .print_votetally-main .print_votetally-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 18px;
+}
+.print_votetally-background .print_votetally-main .print_votetally-right span{
+    display: flex;
+    justify-content: center;
+}
+.print_votetally-background .print_votetally-main input{
+    margin-top: 1px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.print_votetally-background .print_votetally-main label{ 
+    font-style: Normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.print_votetally-background .print_votetally-main input[type=text], .print_votetally-background .print_votetally-main input[type=number]{
+    cursor: text;
+}
+
+.print_votetally-background .print_votetally-footer{
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.print_votetally-background .print_votetally-footer input{
+    padding: 5px 20px;
+    background-color: #D9A217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.print_votetally-background .print_votetally-footer h4{
+    background-color: #E6E6E6;
+    padding: 3px 20px;
+    border: solid gray 1px;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+#colorwaytwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    color: #AA0D0D;
+    cursor: pointer;
+    text-decoration: none;
+}
+#colorwaytwo:hover{
+    background-color: #AA0D0D;
+    color: white;
+}
+
+/* CSS PARA SA PAG ACTIVATE AT DEACTIVATE NG ADMIN */
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-element {
+    animation: rotateAnimation 1s linear;
+}
+
+.error404{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.error404-Top{
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error404-Top1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: -3%;
+
+}
+#txt1{
+    color: #D9A217;
+    font-size: 15px;
+}
+#txt2{
+    color: #AA0D0D;
+    font-size: 60px;
+}
+#img1{
+    margin-left: -3%;
+    margin-top: 10%;
+    width: 150px;
+}
+.error404-Bottom{
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+.txt3{
+    color: #006400;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.txt4{
+    display: none;
+    color: #006400;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Dito sa responsive dapat una ung malalaki palit ng palit sa pagccode
+pero kung ssimulan mo palang una mong iccode is maliit palaki */
+
+@media screen and (max-width: 1279px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .main{
+        display: none;
+    }
+    .error404-Bottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: none;
+    }
+    .txt4{
+        display: block;
+    }
+}
+@media screen and (max-width: 900px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .error404-Bottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .txt3{
+        display: none;
+    }
+    .txt4{
+        display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .error404-Bottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .error404{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .error404-Bottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+
+/* SmartPhones */
+@media screen and (max-width: 420px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+    header .text h5{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+    header .text h5{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 50px;
+    }
+    header .text h5{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 60px;
+    }
+    header .text h5{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+/* Iphone 5 */
+@media screen and (max-width: 320px) {
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 12px;
+        margin-left: 15px;
+        margin-right: 80px;
+    }
+    header .text h5{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+@media screen and (max-width: 280px) {
+    header .logo img{
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 80px;
+    }
+    header .text h5{
+        display: none;
+    }
+    .secondheader{
+        display: none;
+    }
+    #line{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+    }
+    .txt3{
+        display: block;
+    }
+    .txt4{
+        display: none;
+    }
+}
+/* Smartwatch */
+@media screen and (max-width: 170px) {
+    header{
+        display: none;
+    }
+    header .text h5{
+        display: none;
+    }
+    #background-header-1{
+        display: none;
+    }
+    #background-header-2{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .error404{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .error404-Top{
+        margin-left: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error404-Top1{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: -3%;
+    
+    }
+    #txt1{
+        color: #D9A217;
+        font-size: 10px;
+    }
+    #txt2{
+        color: #AA0D0D;
+        font-size: 25px;
+    }
+    #img1{
+        margin-left: -3%;
+        margin-top: 10%;
+        width: 100px;
+    }
+    .error404-Bottom{
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    .txt3{
+        color: #006400;
+        margin: 0px 10px 0px 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .txt4{
+        display: none;
+    }
+}

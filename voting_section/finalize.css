@@ -1,0 +1,2173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+}
+
+header .logo {
+  overflow-y: hidden;
+}
+header .logo img {
+  width: 80px;
+  height: 80px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+header .text {
+  margin-top: 10px;
+  z-index: 0;
+}
+
+header .text h1 {
+  color: #fff;
+  font-size: 18px;
+  font-family: Serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+header .text h4 {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header .text h5 {
+  margin-right: 80px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header .text h5 {
+  display: flex;
+}
+
+header .text h5 span {
+  display: none;
+}
+
+#background-header-1 {
+  width: 100%;
+  height: 58px;
+  background: #006400;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+#background-header-2 {
+  width: 80%;
+  height: 25px;
+  background: #004300;
+  position: absolute;
+  top: 58px;
+  z-index: -1;
+  border: #000 solid 0.1px;
+}
+body {
+  margin-bottom: 10%;
+}
+.main .section2 .section2top img {
+  transform: rotate(270deg);
+}
+.main .section2 .section2top {
+  align-items: center;
+}
+.main .section3 .section3top {
+  align-items: center;
+}
+.main .section4 .section4top {
+  align-items: center;
+}
+.main .section5 .section5top {
+  align-items: center;
+}
+.main .section6 .section6top {
+  align-items: center;
+}
+.main .section7 .section7top {
+  align-items: center;
+}
+.main .section8 .section8top {
+  align-items: center;
+}
+.main .section9 .section9top {
+  align-items: center;
+}
+.main .section10 .section10top {
+  align-items: center;
+}
+.main .section11 .section11top {
+  align-items: center;
+}
+.main .section12 .section12top {
+  align-items: center;
+}
+.main .section13 .section13top {
+  align-items: center;
+}
+.main .section14 .section14top {
+  align-items: center;
+}
+.main .section15 .section15top {
+  align-items: center;
+}
+.main .section16 .section16top {
+  align-items: center;
+}
+.main .sectionlast {
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-around;
+}
+.main .sectionlast h4 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  color: #70c247;
+  width: 140px;
+  justify-content: center;
+  border: solid #70c247 1px;
+  padding: 2% 5% 2% 5%;
+  border-width: 2px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.main .sectionlast button {
+  cursor: pointer;
+  background-color: #70c247;
+  border-color: white;
+  color: white;
+  padding: 2% 8% 2% 8%;
+  font-weight: 700;
+  font-size: 12px;
+  border-style: none;
+  border-radius: 20px;
+}
+
+.candidate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.candidate-left {
+  display: flex;
+  float: left;
+  align-items: center;
+  width: 55%;
+}
+.candidate-right {
+  display: flex;
+  justify-content: right;
+  float: right;
+  align-items: center;
+  width: 45%;
+}
+.candidate #candidate-img {
+  display: flex;
+  float: left;
+  width: 40%;
+  border-radius: 15%;
+  height: 50px;
+  width: 50px;
+}
+.candidate #candidate-name {
+  display: flex;
+  float: right;
+  width: 57%;
+  margin-left: 5px;
+  font-size: 80%;
+  font-weight: bold;
+}
+.candidate #candidate-mission {
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  color: #006400;
+  text-decoration: none;
+}
+.candidate #candidate-mission h3 {
+  margin-left: 5px;
+  font-size: 55%;
+  font-weight: 900;
+}
+.candidate input[type="radio"] {
+  cursor: pointer;
+  margin-left: 5px;
+  height: 25px;
+  width: 25px;
+  accent-color: #006400;
+}
+#ClearSelec {
+  cursor: pointer;
+  display: flex;
+  float: right;
+  font-size: 13px;
+  text-decoration: underline;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.candidate #candidate-mission:hover {
+  background-color: #006400;
+  color: white;
+}
+
+/* Candidate Profile CSS HERE*/
+.candidateprofile-blackbackground {
+  z-index: 2;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  position: fixed;
+  display: none;
+}
+.candidateprofile-background {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 80%;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  cursor: default;
+  position: fixed;
+  display: none;
+}
+.candidateprofile-background h2 {
+  margin: 15px 15px 15px 15px;
+  background-color: #8dd06c;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.candidateprofile-background .candidateprofile-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+}
+.candidateprofile-background .line {
+  border-top: #000 solid 1px;
+}
+.candidateprofile-main .candidateprofile-left {
+  display: flex;
+  justify-content: center;
+  height: 140px;
+  width: 100%;
+}
+.candidateprofile-main .candidateprofile-left img {
+  position: absolute;
+  top: 17%;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.candidateprofile-main .candidateprofile-left h3 {
+  margin: 35px 0px 0px 0px;
+  font-family: Serif;
+  position: absolute;
+  top: 32%;
+  font-size: 20px;
+}
+.candidateprofile-main .candidateprofile-left span {
+  margin-left: 5px;
+  font-size: 25px;
+  font-family: Serif;
+  font-weight: 900;
+}
+.candidateprofile-main .candidateprofile-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 190px;
+  width: 100%;
+}
+.candidateprofile-main .candidateprofile-right #name {
+  display: flex;
+  justify-content: center;
+  font-family: Serif;
+  font-size: 20px;
+}
+.candidateprofile-main .candidateprofile-right .mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  margin: -10px 15px 0px 15px;
+  background-color: #8dd06c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a black shadow */
+  border-radius: 5%;
+  padding: 5px 10px;
+}
+.candidateprofile-main .candidateprofile-right .mission h5 {
+  font-weight: 400;
+  text-align: justify;
+  font-size: 12px;
+}
+.candidateprofile-background .candidateprofile-footer {
+  margin: 10px 20px 10px 10px;
+  display: flex;
+  float: right;
+}
+.candidateprofile-background .candidateprofile-footer input {
+  padding: 5px 20px;
+  background-color: #d9a217;
+  border-width: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.candidateprofile-background .candidateprofile-footer h4 {
+  background-color: white;
+  border: solid #115d33 3px;
+  border-radius: 20px;
+  color: #115d33;
+  padding: 3px 15px;
+  border-width: 2px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.jconfirm-box-container {
+  margin: 0% 36% 20% 36%;
+}
+.jconfirm-title {
+  pointer-events: none;
+  overflow-y: hidden;
+  padding-bottom: 1px;
+}
+.btn-yes {
+  background-color: #006400;
+  color: white;
+}
+
+.error404 {
+  overflow: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 319px) {
+  /* SmartWatch */
+  header {
+    display: none;
+  }
+
+  header .text h5 {
+    display: none;
+  }
+
+  #background-header-1 {
+    display: none;
+  }
+
+  #background-header-2 {
+    display: none;
+  }
+  .error404 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .error404-Top {
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error404-Top1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: -3%;
+  }
+  #txt1 {
+    color: #d9a217;
+    font-size: 10px;
+  }
+  #txt2 {
+    color: #aa0d0d;
+    font-size: 25px;
+  }
+  #img1 {
+    margin-left: -3%;
+    margin-top: 10%;
+    width: 100px;
+  }
+  .error404-Bottom {
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+  }
+  .txt3 {
+    color: #006400;
+    margin: 0px 10px 0px 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .txt4 {
+    display: none;
+  }
+  .main {
+    display: none;
+  }
+  .candidateprofile-blackbackground {
+    display: none;
+  }
+  .candidateprofile-background {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .main .section1 {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .main .section1 h2 {
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main .section2 {
+    margin: 8% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .section2 h2 {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main .section2 .section2-2 {
+    margin-top: 2%;
+  }
+  .main .section2 .section2top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .section2 .section2top img {
+    margin-right: 2%;
+    height: 20px;
+  }
+  .main .section3 {
+    margin: 8% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .section3 h2 {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main .section3 .section3-3 {
+    display: none;
+    margin-top: 2%;
+  }
+  .main .section3 .section3top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .section3 .section3top img {
+    margin-right: 2%;
+    height: 20px;
+  }
+  .main .section4 {
+    margin: 8% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .section4 h2 {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .main .section4 .section4-4 {
+    display: none;
+    margin-top: 2%;
+  }
+  .main .section4 .section4top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .section4 .section4top img {
+    margin-right: 2%;
+    height: 20px;
+  }
+  .main .section5 {
+    margin: 8% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .section5 h2 {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .main .section5 .section5-5 {
+    display: none;
+    margin-top: 2%;
+  }
+  .main .section5 .section5top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .section5 .section5top img {
+    margin-right: 2%;
+    height: 20px;
+  }
+  .main .section6 {
+    margin: 8% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .section6 h2 {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .main .section6 .section6-6 {
+    display: none;
+    margin-top: 2%;
+  }
+  .main .section6 .section6top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .section6 .section6top img {
+    margin-right: 2%;
+    height: 20px;
+  }
+  .main .section7,
+  .main .section8,
+  .main .section9,
+  .main .section10,
+  .main .section11,
+  .main .section12,
+  .main .section13,
+  .main .section14,
+  .main .section15,
+  .main .section16 {
+    margin: 8% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .section7 h2,
+  .main .section8 h2,
+  .main .section9 h2,
+  .main .section10 h2,
+  .main .section11 h2,
+  .main .section12 h2,
+  .main .section13 h2,
+  .main .section14 h2,
+  .main .section15 h2,
+  .main .section16 h2 {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .main .section7 .section7-7,
+  .main .section8 .section8-8,
+  .main .section9 .section9-9,
+  .main .section10 .section10-10,
+  .main .section11 .section11-11,
+  .main .section12 .section12-12,
+  .main .section13 .section13-13,
+  .main .section14 .section14-14,
+  .main .section15 .section15-15,
+  .main .section16 .section16-16 {
+    display: none;
+    margin-top: 2%;
+  }
+  .main .section7 .section7top,
+  .main .section8 .section8top,
+  .main .section9 .section9top,
+  .main .section10 .section10top,
+  .main .section11 .section11top,
+  .main .section12 .section12top,
+  .main .section13 .section13top,
+  .main .section14 .section14top,
+  .main .section15 .section15top,
+  .main .section16 .section16top {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .section7 .section7top img,
+  .main .section8 .section8top img,
+  .main .section9 .section9top img,
+  .main .section10 .section10top img,
+  .main .section11 .section11top img,
+  .main .section12 .section12top img,
+  .main .section13 .section13top img,
+  .main .section14 .section14top img,
+  .main .section15 .section15top img,
+  .main .section16 .section16top img {
+    margin-right: 2%;
+    height: 20px;
+  }
+  .main .sectionlast h4 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #70c247;
+    width: 91px;
+    justify-content: center;
+    border: solid #70c247 1px;
+    border-width: 2px;
+    cursor: pointer;
+  }
+  /* Candidate Profile CSS HERE*/
+  .candidateprofile-blackbackground {
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background h2 {
+    margin: 15px 15px 15px 15px;
+    background-color: #8dd06c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .candidateprofile-background .candidateprofile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+  }
+  .candidateprofile-background .line {
+    border-top: #000 solid 1px;
+  }
+  .candidateprofile-main .candidateprofile-left {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left img {
+    position: absolute;
+    top: 17%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left h3 {
+    margin: 35px 0px 0px 0px;
+    font-family: Serif;
+    position: absolute;
+    top: 32%;
+    font-size: 20px;
+  }
+  .candidateprofile-main .candidateprofile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .candidateprofile-main .candidateprofile-right #name {
+    display: flex;
+    justify-content: center;
+    font-family: Serif;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission {
+    margin: -10px 15px 0px 15px;
+    background-color: #8dd06c;
+    padding: 5px 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 11px;
+  }
+  .candidateprofile-background .candidateprofile-footer {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    float: right;
+  }
+  .candidateprofile-background .candidateprofile-footer input {
+    padding: 5px 20px;
+    background-color: #d9a217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .candidateprofile-background .candidateprofile-footer h4 {
+    background-color: white;
+    border: solid #115d33 3px;
+    border-radius: 20px;
+    color: #115d33;
+    padding: 3px 15px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .jconfirm-box-container {
+    margin: 0% 6% 15% 6%;
+  }
+}
+
+@media (min-width: 481px) {
+  header .logo {
+    overflow-y: hidden;
+  }
+  header .logo img {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+
+  header .text {
+    margin-top: 10px;
+    z-index: 0;
+  }
+
+  header .text h1 {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 26px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  header .text h4 {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  header .text h5 {
+    margin-right: 80px;
+    margin-top: 14px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .text h5 span {
+    display: block;
+  }
+  #background-header-1 {
+    width: 100%;
+    height: 78px;
+    background: #006400;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
+  #background-header-2 {
+    width: 80%;
+    height: 25px;
+    background: #004300;
+    position: absolute;
+    top: 78px;
+    z-index: -1;
+    border: #000 solid 0.1px;
+  }
+  .main .section1 {
+    margin-top: 6%;
+  }
+  .main .section7,
+  .main .section8,
+  .main .section9,
+  .main .section10,
+  .main .section11,
+  .main .section12,
+  .main .section13,
+  .main .section14,
+  .main .section15,
+  .main .section16 {
+    margin: 6% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .sectionlast h4 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #70c247;
+    width: 140px;
+    justify-content: center;
+    border: solid #70c247 1px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .main .sectionlast button {
+    background-color: #70c247;
+    border-color: white;
+    color: white;
+    padding: 2% 6% 2% 6%;
+    font-size: 15px;
+  }
+  .candidate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .candidate-left {
+    display: flex;
+    float: left;
+    align-items: center;
+    width: 55%;
+  }
+  .candidate-right {
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    width: 45%;
+  }
+  .candidate #candidate-img {
+    display: flex;
+    float: left;
+    width: 40%;
+    border-radius: 15%;
+    height: 60px;
+    width: 60px;
+  }
+  .candidate #candidate-name {
+    display: flex;
+    float: right;
+    width: 70%;
+    margin-left: 5px;
+    font-size: 110%;
+    font-weight: bold;
+  }
+  .candidate #candidate-mission {
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    color: #006400;
+  }
+  .candidate #candidate-mission h3 {
+    margin-left: 5px;
+    font-size: 55%;
+    font-weight: 900;
+  }
+  .candidate input[type="radio"] {
+    cursor: pointer;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+    accent-color: #006400;
+  }
+  #ClearSelec {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    font-size: 100%;
+    text-decoration: underline;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+
+  /* Candidate Profile CSS HERE*/
+  .candidateprofile-blackbackground {
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background h2 {
+    margin: 15px 15px 15px 15px;
+    background-color: #8dd06c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .candidateprofile-background .candidateprofile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+  }
+  .candidateprofile-background .line {
+    border-top: #000 solid 1px;
+  }
+  .candidateprofile-main .candidateprofile-left {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left img {
+    position: absolute;
+    top: 17%;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left h3 {
+    margin: 30px 0px 0px 0px;
+    font-family: Serif;
+    position: absolute;
+    top: 39%;
+    font-size: 20px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+  }
+  .candidateprofile-main .candidateprofile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .candidateprofile-main .candidateprofile-right #name {
+    display: flex;
+    justify-content: center;
+    font-family: Serif;
+    font-size: 20px;
+    overflow-y: hidden;
+  }
+  .candidateprofile-main .candidateprofile-right .mission {
+    margin: -10px 15px 0px 15px;
+    background-color: #8dd06c;
+    padding: 5px 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 12px;
+  }
+  .candidateprofile-background .candidateprofile-footer {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    float: right;
+  }
+  .candidateprofile-background .candidateprofile-footer input {
+    padding: 5px 20px;
+    background-color: #d9a217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .candidateprofile-background .candidateprofile-footer h4 {
+    background-color: white;
+    border: solid #115d33 3px;
+    border-radius: 20px;
+    color: #115d33;
+    padding: 3px 15px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .jconfirm-box-container {
+    margin: 0% 6% 0% 6%;
+  }
+}
+
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  header .logo {
+    overflow-y: hidden;
+  }
+  header .logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+  .main .section1 {
+    margin-top: 4%;
+  }
+  .main .section1 h2 {
+    font-size: 20px;
+  }
+  .main .section7,
+  .main .section8,
+  .main .section9,
+  .main .section10,
+  .main .section11,
+  .main .section12,
+  .main .section13,
+  .main .section14,
+  .main .section15,
+  .main .section16 {
+    margin: 4% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .sectionlast button {
+    background-color: #70c247;
+    border-color: white;
+    color: white;
+    padding: 2% 6% 2% 6%;
+    font-size: 18px;
+  }
+  #governornav,
+  #vicegovernornav,
+  #bmtourismnav,
+  #bmeducnav,
+  #bmitnav,
+  #bmhmandbitnav {
+    font-size: 23px;
+  }
+  .candidate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .candidate-left {
+    display: flex;
+    float: left;
+    align-items: center;
+    width: 55%;
+  }
+  .candidate-right {
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    width: 45%;
+  }
+  .candidate #candidate-img {
+    display: flex;
+    float: left;
+    width: 40%;
+    border-radius: 15%;
+    height: 80px;
+    width: 80px;
+  }
+  .candidate #candidate-name {
+    display: flex;
+    float: right;
+    width: 65%;
+    margin-left: 5%;
+    font-size: 110%;
+    font-weight: bold;
+  }
+  .candidate #candidate-mission {
+    cursor: pointer;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    color: #006400;
+  }
+  .candidate #candidate-mission h3 {
+    margin-left: 5px;
+    font-size: 75%;
+    font-weight: 900;
+  }
+  .candidate input[type="radio"] {
+    cursor: pointer;
+    margin-left: 5px;
+    height: 25px;
+    width: 25px;
+    accent-color: #006400;
+  }
+  #ClearSelec {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    font-size: 110%;
+    text-decoration: underline;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  /* Candidate Profile CSS HERE*/
+  .candidateprofile-blackbackground {
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background h2 {
+    margin: 15px 15px 15px 15px;
+    background-color: #8dd06c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .candidateprofile-background .candidateprofile-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+  }
+  .candidateprofile-background .line {
+    border-top: #000 solid 1px;
+  }
+  .candidateprofile-main .candidateprofile-left {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    width: 85%;
+  }
+  .candidateprofile-main .candidateprofile-left img {
+    position: absolute;
+    top: 26%;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left h3 {
+    margin: 35px 0px 0px 0px;
+    font-family: Serif;
+    position: absolute;
+    top: 60%;
+    font-size: 25px;
+  }
+  .candidateprofile-main .candidateprofile-left span {
+    margin-left: 5px;
+    font-size: 25px;
+    font-family: Serif;
+    font-weight: 900;
+  }
+  .candidateprofile-main .candidateprofile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 230px;
+    width: 125%;
+  }
+  .candidateprofile-main .candidateprofile-right #name {
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
+    font-family: Serif;
+    font-size: 25px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission {
+    margin: -10px 15px 0px 15px;
+    background-color: #8dd06c;
+    padding: 5px 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h4 {
+    margin-bottom: 2%;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 13px;
+  }
+  .candidateprofile-background .candidateprofile-footer {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    float: right;
+  }
+  .candidateprofile-background .candidateprofile-footer input {
+    padding: 5px 20px;
+    background-color: #d9a217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .candidateprofile-background .candidateprofile-footer h4 {
+    background-color: white;
+    border: solid #115d33 3px;
+    border-radius: 20px;
+    color: #115d33;
+    padding: 3px 15px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .jconfirm-box-container {
+    margin: 0% 23% 0% 23%;
+  }
+}
+
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  header .logo {
+    overflow-y: hidden;
+  }
+  header .logo img {
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 23px;
+    z-index: 1;
+  }
+  header .text {
+    margin-top: 23px;
+    z-index: 0;
+  }
+  header .text h1 {
+    margin-top: 0px;
+    color: #fff;
+    font-size: 29px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  header .text h4 {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .text h5 {
+    display: flex;
+    margin-right: 80px;
+    margin-top: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #background-header-1 {
+    width: 100%;
+    height: 88px;
+    background: #006400;
+    top: 0px;
+  }
+  #background-header-2 {
+    width: 80%;
+    height: 35px;
+    background: #004300;
+    top: 88px;
+    border: #000 solid 0.1px;
+  }
+  .main .section1 {
+    margin-top: 4%;
+  }
+  .main .section1 h2 {
+    font-size: 25px;
+  }
+  .main .section7,
+  .main .section8,
+  .main .section9,
+  .main .section10,
+  .main .section11,
+  .main .section12,
+  .main .section13,
+  .main .section14,
+  .main .section15,
+  .main .section16 {
+    margin: 4% 6% 0 6%;
+    padding: 2% 5% 2% 5%;
+    background-color: #8dd06c;
+    border-radius: 10px;
+  }
+  .main .sectionlast h4 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #70c247;
+    width: 140px;
+    justify-content: center;
+    border: solid #70c247 1px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .main .sectionlast button {
+    padding: 15px 30px 15px 30px;
+    background-color: #70c247;
+    border-color: white;
+    color: white;
+    font-size: 14px;
+  }
+  #governornav,
+  #vicegovernornav,
+  #bmtourismnav,
+  #bmeducnav,
+  #bmitnav,
+  #bmhmandbitnav {
+    font-size: 26px;
+  }
+  .candidate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .candidate-left {
+    display: flex;
+    float: left;
+    align-items: center;
+    width: 55%;
+  }
+  .candidate-right {
+    margin-right: 3%;
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    width: 43%;
+  }
+  .candidate #candidate-img {
+    display: flex;
+    float: left;
+    width: 40%;
+    border-radius: 15%;
+    height: 80px;
+    width: 80px;
+  }
+  .candidate #candidate-name {
+    display: flex;
+    float: right;
+    width: 65%;
+    margin-left: 5%;
+    font-size: 140%;
+    font-weight: bold;
+  }
+  .candidate #candidate-mission {
+    cursor: pointer;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    color: #006400;
+  }
+  .candidate #candidate-mission h3 {
+    margin-left: 5px;
+    font-size: 100%;
+    font-weight: 900;
+  }
+  .candidate input[type="radio"] {
+    cursor: pointer;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    accent-color: #006400;
+  }
+  #ClearSelec {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    font-size: 115%;
+    text-decoration: underline;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  /* Candidate Profile CSS HERE*/
+  .candidateprofile-blackbackground {
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background h2 {
+    margin: 15px 15px 15px 15px;
+    background-color: #8dd06c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .candidateprofile-background .candidateprofile-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+  }
+  .candidateprofile-background .line {
+    border-top: #000 solid 1px;
+  }
+  .candidateprofile-main .candidateprofile-left {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    width: 85%;
+  }
+  .candidateprofile-main .candidateprofile-left img {
+    position: absolute;
+    top: 24%;
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left h3 {
+    margin: 35px 0px 0px 0px;
+    font-family: Serif;
+    position: absolute;
+    top: 63%;
+    font-size: 28px;
+  }
+  .candidateprofile-main .candidateprofile-left span {
+    margin-left: 5px;
+    font-size: 28px;
+    font-family: Serif;
+    font-weight: 900;
+  }
+  .candidateprofile-main .candidateprofile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 230px;
+    width: 135%;
+  }
+  .candidateprofile-main .candidateprofile-right #name {
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
+    font-family: Serif;
+    font-size: 28px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission {
+    margin: -10px 25px 0px 25px;
+    background-color: #8dd06c;
+    padding: 5px 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h4 {
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 16px;
+  }
+  .candidateprofile-background .candidateprofile-footer {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    float: right;
+  }
+  .candidateprofile-background .candidateprofile-footer input {
+    padding: 5px 20px;
+    background-color: #d9a217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .candidateprofile-background .candidateprofile-footer h4 {
+    background-color: white;
+    border: solid #115d33 3px;
+    border-radius: 20px;
+    color: #115d33;
+    padding: 3px 15px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .jconfirm-box-container {
+    margin: 0% 26% 0% 26%;
+  }
+}
+
+@media (min-width: 1025px) {
+  header .text h5 {
+    display: flex;
+    margin-right: 80px;
+    margin-top: 18px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  /* big landscape tablets, laptops, and desktops */
+  .main .sectionlast h4 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #70c247;
+    width: 140px;
+    justify-content: center;
+    border: solid #70c247 1px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .main .sectionlast button {
+    padding: 15px 40px 15px 40px;
+    background-color: #70c247;
+    border-color: white;
+    color: white;
+    font-size: 16px;
+  }
+  #governornav,
+  #vicegovernornav,
+  #bmtourismnav,
+  #bmeducnav,
+  #bmitnav,
+  #bmhmandbitnav {
+    font-size: 29px;
+  }
+  .candidate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .candidate-left {
+    display: flex;
+    float: left;
+    align-items: center;
+    width: 55%;
+  }
+  .candidate-right {
+    margin-right: 3%;
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    width: 43%;
+  }
+  .candidate #candidate-img {
+    display: flex;
+    float: left;
+    width: 40%;
+    border-radius: 15%;
+    height: 100px;
+    width: 100px;
+  }
+  .candidate #candidate-name {
+    display: flex;
+    float: right;
+    width: 65%;
+    margin-left: 5%;
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .candidate #candidate-mission {
+    cursor: pointer;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    color: #006400;
+  }
+  .candidate #candidate-mission h3 {
+    margin-left: 5px;
+    font-size: 100%;
+    font-weight: 900;
+  }
+  .candidate input[type="radio"] {
+    cursor: pointer;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    accent-color: #006400;
+  }
+  #ClearSelec {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    font-size: 115%;
+    text-decoration: underline;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  /* Candidate Profile CSS HERE*/
+  .candidateprofile-blackbackground {
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background h2 {
+    margin: 15px 15px 15px 15px;
+    background-color: #8dd06c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 23px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .candidateprofile-background .candidateprofile-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+  }
+  .candidateprofile-background .line {
+    border-top: #000 solid 1px;
+  }
+  .candidateprofile-main .candidateprofile-left {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    width: 85%;
+  }
+  .candidateprofile-main .candidateprofile-left img {
+    position: absolute;
+    top: 24%;
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left h3 {
+    margin-right: 15px;
+    font-family: Serif;
+    position: absolute;
+    top: 63%;
+    font-size: 23px;
+  }
+  .candidateprofile-main .candidateprofile-left span {
+    margin-left: 5px;
+    font-size: 28px;
+    font-family: Serif;
+    font-weight: 900;
+  }
+  .candidateprofile-main .candidateprofile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 230px;
+    width: 125%;
+  }
+  .candidateprofile-main .candidateprofile-right #name {
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
+    font-family: Serif;
+    font-size: 28px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission {
+    margin: -10px 25px 0px 25px;
+    background-color: #8dd06c;
+    padding: 5px 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h4 {
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 14px;
+  }
+  .candidateprofile-background .candidateprofile-footer {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    float: right;
+  }
+  .candidateprofile-background .candidateprofile-footer input {
+    padding: 5px 20px;
+    background-color: #d9a217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .candidateprofile-background .candidateprofile-footer h4 {
+    background-color: white;
+    border: solid #115d33 3px;
+    border-radius: 20px;
+    color: #115d33;
+    padding: 3px 15px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .jconfirm-box-container {
+    margin: 0% 33% 20% 33%;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  header .text h5 {
+    display: flex;
+    margin-right: 80px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main .sectionlast h4 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: #70c247;
+    width: 140px;
+    justify-content: center;
+    border: solid #70c247 1px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .main .sectionlast button {
+    padding: 20px 50px 20px 50px;
+    background-color: #70c247;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+  }
+  #governornav,
+  #vicegovernornav,
+  #bmtourismnav,
+  #bmeducnav,
+  #bmitnav,
+  #bmhmandbitnav {
+    font-size: 32px;
+  }
+  .candidate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .candidate-left {
+    display: flex;
+    float: left;
+    align-items: center;
+    width: 55%;
+  }
+  .candidate-right {
+    margin-right: 3%;
+    display: flex;
+    justify-content: right;
+    float: right;
+    align-items: center;
+    width: 43%;
+  }
+  .candidate #candidate-img {
+    display: flex;
+    float: left;
+    width: 40%;
+    border-radius: 15%;
+    height: 100px;
+    width: 100px;
+  }
+  .candidate #candidate-name {
+    display: flex;
+    float: right;
+    width: 65%;
+    margin-left: 5%;
+    font-size: 180%;
+    font-weight: bold;
+  }
+  .candidate #candidate-mission {
+    cursor: pointer;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    color: #006400;
+  }
+  .candidate #candidate-mission h3 {
+    margin-left: 5px;
+    font-size: 100%;
+    font-weight: 900;
+  }
+  .candidate input[type="radio"] {
+    cursor: pointer;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    accent-color: #006400;
+  }
+  #ClearSelec {
+    cursor: pointer;
+    display: flex;
+    float: right;
+    font-size: 115%;
+    text-decoration: underline;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  /* Candidate Profile CSS HERE*/
+  .candidateprofile-blackbackground {
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: default;
+    position: fixed;
+    display: block;
+  }
+  .candidateprofile-background h2 {
+    margin: 15px 15px 15px 15px;
+    background-color: #8dd06c;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 26px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .candidateprofile-background .candidateprofile-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
+  .candidateprofile-background .line {
+    border-top: #000 solid 1px;
+  }
+  .candidateprofile-main .candidateprofile-left {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    width: 85%;
+  }
+  .candidateprofile-main .candidateprofile-left img {
+    position: absolute;
+    top: 24%;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+  }
+  .candidateprofile-main .candidateprofile-left h3 {
+    margin: 35px 0px 0px 0px;
+    font-family: Serif;
+    position: absolute;
+    top: 63%;
+    font-size: 28px;
+  }
+  .candidateprofile-main .candidateprofile-left span {
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: Serif;
+    font-weight: 900;
+  }
+  .candidateprofile-main .candidateprofile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    width: 135%;
+  }
+  .candidateprofile-main .candidateprofile-right #name {
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
+    font-family: Serif;
+    font-size: 30px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission {
+    margin: -10px 25px 0px 25px;
+    background-color: #8dd06c;
+    padding: 5px 10px;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h4 {
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+  .candidateprofile-main .candidateprofile-right .mission h5 {
+    font-weight: 400;
+    text-align: justify;
+    font-size: 18px;
+  }
+  .candidateprofile-background .candidateprofile-footer {
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    float: right;
+  }
+  .candidateprofile-background .candidateprofile-footer input {
+    padding: 5px 20px;
+    background-color: #d9a217;
+    border-width: 2px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .candidateprofile-background .candidateprofile-footer h4 {
+    background-color: white;
+    border: solid #115d33 3px;
+    border-radius: 20px;
+    color: #115d33;
+    padding: 3px 15px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+}

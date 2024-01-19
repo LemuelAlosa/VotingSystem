@@ -1,0 +1,1164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+}
+
+header .logo{
+    overflow-y: hidden;
+}
+header .logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+}
+
+header .text {
+    margin-top: 10px;
+    z-index: 0;
+}
+
+header .text h1 {
+    color: #fff;
+    font-size: 18px;
+    font-family: Serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header .text h4 {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header .text h5 {
+    margin-right: 80px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header .text h5{
+    display: flex;
+}
+
+header .text h5 span {
+    display: none;
+}
+
+#background-header-1 {
+    width: 100%;
+    height: 58px;
+    background: #006400;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+#background-header-2 {
+    width: 80%;
+    height: 25px;
+    background: #004300;
+    position: absolute;
+    top: 58px;
+    z-index: -1;
+    border: #000 solid 0.1px;
+}
+body{
+    margin-bottom: 10%;
+}
+.main{
+    margin-top: -9px;
+}
+.section1{
+    margin-top: 5px;
+    display: flex;
+    height: 30px;
+}
+.section1 .section1-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: #D9A217;
+    font-size: 10px;
+}
+.section1 .section1-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    font-size: 11px;
+    margin-left: 10px;
+    overflow-y: hidden;
+}
+.section1 .section1-right #colorway1{
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px;
+    color: #D9A217;
+    cursor: pointer;
+}
+.section1 .section1-right #colorway1:hover{
+    background-color: #D9A217;
+    color: white;
+}
+.section1 .section1-right #colorway1 img{
+    height: 15px;
+    width: 15px;
+}
+.section1 .section1-right #colorway1 h3{
+    font-size: 10px;
+    margin-left: 3px;
+
+}
+#section1-line{
+    border: #000 solid 0.5px;
+    width: 100%;
+    float: right;
+}
+.section2{
+    background-color: #C7D36F;
+    margin: 15px 15px 0px 10px;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main section .section3 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.main section .section3 h2 {
+    background-color: #C7D36F;
+    margin: 5px 15px 0px 15px;
+    padding: 5px 0px 5px 30px;
+    border-radius: 10px;
+    font-family: Inter;
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main section .section3 .section3-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px 10px 15px;
+    align-items: center;
+}
+
+.main section .section3 .section3-top div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+}
+
+.main section .section3 .section3-top div select {
+    padding: 10px;
+    font-size: 25pxs;
+    margin-right: 10px;
+}
+
+.main section .section3 .section3-top div img {
+    margin-right: 10px;
+}
+
+.main section .section3 .section3-top div h3 {
+    font-style: normal;
+    font-size: 16px;
+}
+
+.main section, .section3 .section3-mid {
+    position: relative;
+    z-index: -2;
+    overflow-y: hidden;
+    background-color: #fafafa;
+    height: 550px;
+    margin-top: 20px; /* Add space above */
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a black shadow */
+}
+.slider {
+    position: relative; /* or use 'absolute' if needed */
+    top: 20px; /* Adjust the value to move it down or up */
+    left: 200px;
+}
+
+
+.chart-canvas {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.next-button {
+    display: block;
+    margin: 0 auto;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid  rgb(185, 185, 185);
+    /* Change the color to your desired color */
+    border-right: 4px solid  rgb(185, 185, 185);
+    /* Change the color to your desired color */
+    transform: rotate(-135deg);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.arrow-right {
+    transform: rotate(45deg);
+}
+
+.indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.indicator-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:  rgb(185, 185, 185);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator-dot.active {
+    transform: scale(1.0);
+    background-color:  black;
+}
+
+.main section .section3 .section3-mid .slider .slides .slide-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultPosition {
+    font-size: 60px;
+    position: absolute;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-family: Serif;
+}
+
+#votingChart1,
+#votingChart2,
+#votingChart3,
+#votingChart4,
+#votingChart5,
+#votingChart6,
+#votingChart7,
+#votingChart8,
+#votingChart9,
+#votingChart10,
+#votingChart11,
+#votingChart12,
+#votingChart13,
+#votingChart14,
+#votingChart15{
+    position: absolute;
+    margin-top: -215px;
+    margin-left: 100px;
+}
+
+/* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+.section4-table table {
+    margin: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    width: 98.3%;
+    border: black solid 1px;
+    font-size: 23px;
+}
+
+.section4-table table, .section4-table th, .section4-table td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 100%;
+    text-align: center;
+}
+.section4-table th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section4-table td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.section4-table #col1{
+    width: 70%;
+    padding-left: 25px;
+    text-align: left;
+}
+.section4-table th{
+    background-color: #C7D36F;
+}
+.section4-table table img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.section4-table table #votes{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #D9A217;
+}
+
+.jconfirm-box-container {
+    margin: 0% 36% 20% 36%;
+}
+.jconfirm-title {
+    pointer-events: none;
+    overflow-y: hidden;
+    padding-bottom: 1px;
+}
+.btn-yes {
+    background-color: #006400;
+    color: white;
+}
+
+
+.error404{
+    overflow: hidden;
+    display: none;
+}
+
+@media screen and (max-width: 319px) {
+
+    /* SmartWatch */
+    header {
+        display: none;
+    }
+
+    header .text h5 {
+        display: none;
+    }
+
+    #background-header-1 {
+        display: none;
+    }
+
+    #background-header-2 {
+        display: none;
+    }
+    .error404{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .error404-Top{
+        margin-left: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error404-Top1{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: -3%;
+    
+    }
+    #txt1{
+        color: #D9A217;
+        font-size: 10px;
+    }
+    #txt2{
+        color: #AA0D0D;
+        font-size: 25px;
+    }
+    #img1{
+        margin-left: -3%;
+        margin-top: 10%;
+        width: 100px;
+    }
+    .error404-Bottom{
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    .txt3{
+        color: #006400;
+        margin: 0px 10px 0px 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .txt4{
+        display: none;
+    }
+    .main{
+        display: none;
+    }
+    .section1{
+        display: none;
+    }
+    .section2{
+        display: none;
+    }
+    .section3{
+        display: none;
+    }
+    
+}
+
+@media (min-width:320px) {
+    .section1{
+        margin-top: 5px;
+        display: flex;
+        height: 30px;
+    }
+    .section1 .section1-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #D9A217;
+        font-size: 10px;
+    }
+    .section1 .section1-right{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    #section1-line{
+        border: #000 solid 0.5px;
+        width: 100%;
+        float: right;
+    }
+    .section2{
+        background-color: #C7D36F;
+        margin: 15px 15px 0px 10px;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: Inter;
+        color: #000;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section3{
+        display: none;
+    }
+    /* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+    .section4-table table {
+        margin: 10px 10px 10px 10px;
+        border-collapse: collapse;
+        width: 95%;
+        border: black solid 1px;
+        font-size: 11px;
+    }
+
+    .section4-table table, .section4-table th, .section4-table td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .section4-table th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section4-table td{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section4-table #col1{
+        width: 60%;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .section4-table th{
+        background-color: #C7D36F;
+    }
+    .section4-table table img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .section4-table table #votes{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #D9A217;
+    }
+}
+
+@media (min-width:481px) {
+    .main{
+        margin-top: -3px;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 90px;
+        height: 90px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    
+    header .text {
+        margin-top: 10px;
+        z-index: 0;
+    }
+    
+    header .text h1 {
+        margin-top: 8px;
+        color: #fff;
+        font-size: 26px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    header .text h4 {
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    header .text h5 {
+        margin-right: 80px;
+        margin-top: 14px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5 span {
+        display: block;
+    }
+    #background-header-1 {
+        width: 100%;
+        height: 78px;
+        background: #006400;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    }
+    #background-header-2 {
+        width: 80%;
+        height: 25px;
+        background: #004300;
+        position: absolute;
+        top: 78px;
+        z-index: -1;
+        border: #000 solid 0.1px;
+    }
+    .section1{
+        margin-top: 2px;
+        display: flex;
+        height: 30px;
+    }
+    .section1 .section1-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #D9A217;
+        font-size: 11px;
+    }
+    .section1 .section1-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        font-size: 11px;
+        margin-left: 10px;
+        overflow-y: hidden;
+    }
+    .section1 .section1-right #colorway1{
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-width: 2px;
+        padding: 2px;
+        color: #D9A217;
+        cursor: pointer;
+    }
+    .section1 .section1-right #colorway1 img{
+        height: 15px;
+        width: 15px;
+    }
+    .section1 .section1-right #colorway1 h3{
+        font-size: 11px;
+        margin-left: 3px;
+    }
+    #section1-line{
+        border: #000 solid 0.5px;
+        width: 100%;
+        float: right;
+    }
+    .section2{
+        background-color: #C7D36F;
+        margin: 15px 15px 0px 10px;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: Inter;
+        color: #000;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section3{
+        display: none;
+    }
+    /* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+    .section4-table table {
+        margin: 10px 10px 10px 10px;
+        border-collapse: collapse;
+        width: 95%;
+        border: black solid 1px;
+        font-size: 14px;
+    }
+
+    .section4-table table, .section4-table th, .section4-table td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .section4-table th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section4-table td{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section4-table #col1{
+        width: 60%;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .section4-table th{
+        background-color: #C7D36F;
+    }
+    .section4-table table img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .section4-table table #votes{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #D9A217;
+    }
+}
+
+@media (min-width:641px) {
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .main{
+        margin-top: -6px;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 100px;
+        height: 100px;
+        margin-top: 3px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 1;
+    }
+    .section1{
+        margin-top: 2px;
+        display: flex;
+        height: 30px;
+    }
+    .section1 .section1-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #D9A217;
+        font-size: 11px;
+    }
+    .section1 .section1-right{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        font-size: 11px;
+        margin-left: 10px;
+    }
+    #section1-line{
+        border: #000 solid 0.5px;
+        width: 100%;
+        float: right;
+    }
+    .section2{
+        background-color: #C7D36F;
+        margin: 15px 15px 0px 10px;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: Inter;
+        color: #000;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section3{
+        display: none;
+    }
+    /* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+    .section4-table table {
+        margin: 10px 10px 10px 10px;
+        border-collapse: collapse;
+        width: 96%;
+        border: black solid 1px;
+        font-size: 14px;
+    }
+
+    .section4-table table, .section4-table th, .section4-table td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .section4-table th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section4-table td{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section4-table #col1{
+        width: 60%;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .section4-table th{
+        background-color: #C7D36F;
+    }
+    .section4-table table img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .section4-table table #votes{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #D9A217;
+    }
+}
+
+@media (min-width:961px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .main{
+        margin-top: -13px;
+    }
+    header .logo{
+        overflow-y: hidden;
+    }
+    header .logo img{
+        width: 120px;
+        height: 120px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-right: 23px;
+        z-index: 1;
+    }
+    header .text{
+        margin-top: 23px;
+        z-index: 0;
+    }
+    header .text h1{
+        margin-top: 0px;
+        color: #fff;
+        font-size: 29px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    header .text h4{
+        margin-top: 5px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    header .text h5{
+        display: flex;
+        margin-right: 80px;
+        margin-top: 16px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    #background-header-1{
+        width: 100%;
+        height: 88px;
+        background: #006400;
+        top: 0px;
+    }
+    #background-header-2{
+        width: 80%;
+        height: 35px;
+        background: #004300;
+        top: 88px;
+        border: #000 solid 0.1px;
+    }
+    .section1{
+        margin-top: 7px;
+        display: flex;
+        height: 35px;
+    }
+    .section1 .section1-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #D9A217;
+        font-size: 11px;
+    }
+    .section1 .section1-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        font-size: 11px;
+        margin-left: 10px;
+        overflow-y: hidden;
+    }
+    .section1 .section1-right #colorway1{
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-width: 2px;
+        padding: 3px;
+        color: #D9A217;
+        cursor: pointer;
+    }
+    .section1 .section1-right #colorway1 img{
+        height: 15px;
+        width: 15px;
+    }
+    .section1 .section1-right #colorway1 h3{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    #section1-line{
+        border: #000 solid 0.5px;
+        width: 100%;
+        float: right;
+    }
+    .section2{
+        background-color: #C7D36F;
+        margin: 15px 15px 0px 10px;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: Inter;
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section3{
+        display: none;
+    }
+    /* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+    .section4-table table {
+        margin: 10px 10px 10px 10px;
+        border-collapse: collapse;
+        width: 97%;
+        border: black solid 1px;
+        font-size: 16px;
+    }
+
+    .section4-table table, .section4-table th, .section4-table td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .section4-table th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section4-table td{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section4-table #col1{
+        width: 60%;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .section4-table th{
+        background-color: #C7D36F;
+    }
+    .section4-table table img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    .section4-table table #votes{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #D9A217;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    header .text h5{
+        display: flex;
+        margin-right: 80px;
+        margin-top: 18px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section1{
+        margin-top: 7px;
+        display: flex;
+        height: 35px;
+    }
+    .section1 .section1-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #D9A217;
+        font-size: 11px;
+    }
+    .section1 .section1-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        font-size: 11px;
+        margin-left: 10px;
+        overflow-y: hidden;
+    }
+    .section1 .section1-right #colorway1{
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-width: 2px;
+        padding: 4px;
+        color: #D9A217;
+        cursor: pointer;
+    }
+    .section1 .section1-right #colorway1 img{
+        height: 17px;
+        width: 17px;
+    }
+    .section1 .section1-right #colorway1 h3{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    #section1-line{
+        border: #000 solid 0.5px;
+        width: 100%;
+        float: right;
+    }
+    .section2{
+        background-color: #C7D36F;
+        margin: 15px 15px 0px 10px;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: Inter;
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section3{
+        display: none;
+    }
+    /* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+    .section4-table table {
+        margin: 10px 10px 10px 10px;
+        border-collapse: collapse;
+        width: 97.5%;
+        border: black solid 1px;
+        font-size: 18px;
+    }
+    .section4-table table, .section4-table th, .section4-table td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .section4-table th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section4-table td{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section4-table #col1{
+        width: 60%;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .section4-table th{
+        background-color: #C7D36F;
+    }
+    .section4-table table img{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+    .section4-table table #votes{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #D9A217;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    header .text h5{
+        display: flex;
+        margin-right: 80px;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .section3{
+        display: block;
+    }
+    /* ITO NAMAN IS SA PAG SSHOW NG TABLE SA BABA NG CHART */
+    .section4-table table {
+        margin: 10px 10px 10px 10px;
+        border-collapse: collapse;
+        width: 98.5%;
+        border: black solid 1px;
+        font-size: 18px;
+    }
+    .section4-table table, .section4-table th, .section4-table td {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+        text-align: center;
+    }
+    .section4-table th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .section4-table td{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .section4-table #col1{
+        width: 60%;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .section4-table th{
+        background-color: #C7D36F;
+    }
+    .section4-table table img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+    .section4-table table #votes{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #D9A217;
+    }
+}
